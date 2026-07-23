@@ -1,0 +1,20 @@
+:root {
+	/* Colours */
+	/* 	--tvsb-color-light: 214 37% 96%;
+	--tvsb-color-dark: 0 20% 9%;
+	--tvsb-color-grey: 210 13% 50%;
+	--tvsb-color-blue: 216 94% 25%;
+	--tvsb-color-smoke: 201 15% 55%;
+	--tvsb-color-go: 113° 83% 21%;
+	--tvsb-color-warning: 24 100% 50%;
+	--tvsb-color-danger: 359 100% 44%;
+	--tvsb-color-highlight: 35° 99% 57%; */
+}
+
+body {
+	min-block-size: 100svh;
+}
+.bg-image {
+	/* 	background-color: aqua; */
+	background-image: "images/logo-tove-valley.png";
+}
