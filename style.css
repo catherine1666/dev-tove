@@ -1,20 +1,52 @@
 :root {
-	/* Colours */
-	/* 	--tvsb-color-light: 214 37% 96%;
-	--tvsb-color-dark: 0 20% 9%;
-	--tvsb-color-grey: 210 13% 50%;
-	--tvsb-color-blue: 216 94% 25%;
-	--tvsb-color-smoke: 201 15% 55%;
-	--tvsb-color-go: 113° 83% 21%;
-	--tvsb-color-warning: 24 100% 50%;
-	--tvsb-color-danger: 359 100% 44%;
-	--tvsb-color-highlight: 35° 99% 57%; */
+	--scroll-padding: 13rem;
+	/* COLOURS */
+	--ombudsman-purple-color: 300 89% 14%;
+	--ombudsman-purple-green: 157 60% 63%;
 }
-
 body {
 	min-block-size: 100svh;
+}
+.navbar-padding {
+	padding-top: var(--scroll-padding);
+}
+
+/* BUTTONS */
+.btn-ombudsman {
+	background-color: hsl(var(--ombudsman-purple-color));
+	color: hsl(var(--ombudsman-purple-green));
+}
+.btn-ombudsman:hover {
+	background-color: hsl(var(--ombudsman-purple-color));
+	color: hsl(var(--ombudsman-purple-green));
+	text-decoration: underline;
+}
+/* IMAGES */
+.img-logo-small {
+	width: 5em;
+	height: auto;
+	/*   width: 200;
+  height: 138; */
 }
 .bg-image {
 	/* 	background-color: aqua; */
 	background-image: "images/logo-tove-valley.png";
+	min-height: 100svh;
+	background-image: fixed;
+}
+/* NAV BAR AND FOOTER */
+a.active {
+	text-decoration: underline;
+}
+.nav-link:hover,
+.nav-link:focus {
+	text-decoration: underline;
+}
+
+/* TRANSITION EFFECTS */
+@media (prefers-reduced-motion: no-preference) {
+	:has(:target) {
+		scroll-behavior: smooth;
+		scroll-padding-top: 3rem;
+	}
 }
