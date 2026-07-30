@@ -36,11 +36,13 @@ body {
 	border-color: hsl(var(--tvsb-clr-secondary));
 }
 /* IMAGES */
-.img-logo-small {
+.img-logo-sm {
 	width: 5em;
 	height: auto;
-	/*   width: 200;
-  height: 138; */
+}
+.img-logo-xs {
+	width: 3em;
+	height: auto;
 }
 .bg-image {
 	/* 	background-color: aqua; */
