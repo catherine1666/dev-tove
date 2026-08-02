@@ -1,25 +1,50 @@
 :root {
-	--scroll-padding: 15rem;
+	--scroll-padding: 12rem;
 	/* COLOURS */
 	/* 	--tvsb-btn-primary: 113 83% 21%; */
 	--tvsb-clr-secondary: 204 21% 23%;
 	--tvsb-clr-light: 214 37% 96%;
+	--tvsb-clr-navy: 216 70% 29%;
+	--tvsb-clr-green: 113 83% 21%;
 	--ombudsman-purple-color: 300 89% 14%;
 	--ombudsman-purple-green: 157 60% 63%;
 }
 body {
 	min-block-size: 100svh;
+	font-family: Montserrat, Helvetica, sans-serif;
 }
 .navbar-padding {
 	padding-top: var(--scroll-padding);
 }
 /* TYPOGRAPHY */
+h1,
+h2,
+h3,
+serif {
+	font-family: "Cinzel", Georgia, serif;
+}
+h4,
+h5,
+h6,
+p,
+span,
+nonserif {
+	font-family: "Cinzel", Georgia, serif;
+}
 /* Font sizes */
 .fontsize-sm {
 	font-size: 0.75em;
 }
 .fontsize-xs {
 	font-size: 0.45em;
+}
+/* Alignment */
+h1,
+h2,
+h3 {
+	text-align: center;
+	padding-top: 1rem;
+	color: hsl(var(--tvsb-clr-green));
 }
 /* BUTTONS */
 .btn-ombudsman {
@@ -34,6 +59,23 @@ body {
 .btn-secondary {
 	background-color: hsl(var(--tvsb-clr-secondary));
 	border-color: hsl(var(--tvsb-clr-secondary));
+}
+/* Accordians */
+.accordion-button:focus,
+.accordion-button:hover,
+.accordion-button:active {
+	outline: none;
+	box-shadow: none;
+}
+.accordion-item {
+	font-size: 0.75rem;
+}
+/* ICONS */
+.bi {
+	font-size: 1.5em;
+}
+.bi-envelope-at {
+	font-size: 1em;
 }
 /* IMAGES */
 .img-logo-sm {
