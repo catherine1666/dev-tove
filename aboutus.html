@@ -14,6 +14,13 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
 		/>
+		<!-- FONTS - Downloaded Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Math&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" type="text/css" />
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -32,19 +39,28 @@
 			>
 				<div class="btn-group me-2" role="group" aria-label="First group">
 					<a href="#">
-						<button type="button" class="btn btn-danger">
+						<button type="button" class="btn btn-danger btn-sm">
 							Report a problem
 						</button></a
 					>
 				</div>
+				<a class="navbar-brand" href="index.html"
+					><img
+						src="images/logo-tove-valley.png"
+						class="img-logo-xs rounded-circle"
+						alt="Tove Valley Broadband Logo"
+				/></a>
 				<div class="btn-group me-2" role="group" aria-label="Second group">
 					<a href="#"
-						><button type="button" class="btn btn-secondary me-1 rounded-1">
+						><button
+							type="button"
+							class="btn btn-secondary btn-sm me-1 rounded-1"
+						>
 							Log In
 						</button></a
 					>
 					<a href="#"
-						><button type="button" class="btn btn-secondary rounded-1">
+						><button type="button" class="btn btn-secondary btn-sm rounded-1">
 							<i class="bi bi-envelope-at"></i>
 							Webmail
 						</button></a
@@ -52,15 +68,10 @@
 				</div>
 			</div>
 			<nav class="navbar navbar-expand-md navbar-dark">
-				<div class="container-fluid d-flex justify-content-center">
-					<a class="navbar-brand" href="index.html"
-						><img
-							src="images/logo-tove-valley.png"
-							class="img-logo-xs rounded-circle"
-							alt="Tove Valley Broadband Logo"
-					/></a>
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#"></a>
 					<button
-						class="navbar-toggler border border-0 text-white"
+						class="navbar-toggler border border-0 shadow-none text-white justify-content-end"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarNav"
@@ -68,13 +79,13 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon text-white"></span>
+						<span class="navbar-toggler-icon text-white fontsize-sm"></span>
 					</button>
 					<div
-						class="collapse navbar-collapse justify-content-end"
+						class="collapse navbar-collapse justify-content-center"
 						id="navbarNav"
 					>
-						<ul class="navbar-nav">
+						<ul class="navbar-nav justify-content-center">
 							<li class="nav-item px-2">
 								<a class="nav-link text-white" href="index.html">Home</a>
 							</li>
@@ -109,21 +120,13 @@
 		</header>
 		<main class="navbar-padding">
 			<h1>About Us</h1>
-			<!-- Introduction paragraph -->
-			<section class="container-sm pt-3">
-				<p>
-					Tove Valley Broadband brings a very fast 10,000Mbps symetrical
-					fibre-optic internet connection into some villages in the Tove Valley
-					and distributes connections to properties by fibre-optics or by radio.
-				</p>
-			</section>
 			<!-- Page link buttons -->
-			<div class="container-md text-center pt-3">
+			<div class="container-lg text-center">
 				<div class="btn-group" role="group" aria-label="Section Options">
 					<a href="#what-we-do">
 						<button
 							type="button"
-							class="btn btn-outline-secondary text-dark mx-3 rounded-0"
+							class="btn btn-outline-secondary btn-sm text-dark rounded-0"
 						>
 							<div class="d-flex align-items-center fontsize-sm">
 								<i class="bi bi-hdd-network"></i>
@@ -134,7 +137,7 @@
 					<a href="#history">
 						<button
 							type="button"
-							class="btn btn-outline-secondary text-dark mx-3 rounded-0"
+							class="btn btn-outline-secondary btn-sm text-dark rounded-0"
 						>
 							<div class="d-flex align-items-center fontsize-sm">
 								<i class="bi bi-book"></i>
@@ -145,7 +148,7 @@
 					<a href="#team">
 						<button
 							type="button"
-							class="btn btn-outline-secondary text-dark mx-3 rounded-0"
+							class="btn btn-outline-secondary btn-sm text-dark rounded-0"
 						>
 							<div class="d-flex align-items-center fontsize-sm">
 								<i class="bi bi-people-fill"></i>
@@ -156,7 +159,7 @@
 					<a href="#gallery">
 						<button
 							type="button"
-							class="btn btn-outline-secondary text-dark mx-3 rounded-0"
+							class="btn btn-outline-secondary btn-sm text-dark rounded-0"
 						>
 							<div class="d-flex align-items-center fontsize-sm">
 								<i class="bi bi-camera"></i>
@@ -166,310 +169,323 @@
 					</a>
 				</div>
 			</div>
-			<hr />
+			<!-- Introduction paragraph -->
+			<section class="container-sm">
+				<p class="text-center">
+					Tove Valley Broadband brings a very fast 10,000Mbps symetrical
+					fibre-optic internet connection into some villages in the Tove Valley
+					and distributes connections to properties by fibre-optics or by radio.
+				</p>
+			</section>
+
 			<!-- Information Section -->
-			<article id="what-we-do" class="container-sm">
-				<h2>What we do</h2>
-				<div class="accordion" id="accordionCompany">
-					<div class="accordion-item">
-						<div class="accordion-header">
-							<button
-								class="accordion-button collapsed bg-white text-dark px-2"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#collapseCompany"
-								aria-expanded="true"
-								aria-controls="collapseCompany"
-							>
-								<img
-									src="images/logo-tove-valley.png"
-									class="img-logo-xs pe-2"
-								/>
-								<!-- <span class="fw-light fst-italic text-success pe-2">ABba</span
+			<section>
+				<article id="what-we-do" class="container-sm pt-4">
+					<h2 class="">What we do</h2>
+					<div class="accordion" id="accordionCompany">
+						<div class="accordion-item">
+							<div class="accordion-header">
+								<button
+									class="accordion-button collapsed bg-white text-dark px-2"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseCompany"
+									aria-expanded="true"
+									aria-controls="collapseCompany"
+								>
+									<img
+										src="images/logo-tove-valley.png"
+										class="img-logo-xs pe-2"
+									/>
+									<!-- <span class="fw-light fst-italic text-success pe-2">ABba</span
 								> -->Abthorpe Broadband Association Limited (ABba) - Tove Valley Broadband (TVB)
-							</button>
-						</div>
-						<div
-							id="collapseCompany"
-							class="accordion-collapse collapse"
-							data-bs-parent="#accordionCompany"
-						>
-							<div class="accordion-body">
-								<p>
-									Abthorpe Broadband Association Limited - a not-for-profit
-									limited by guarantee company - is a volunteer run organisation
-									and has been connecting houses to fibre-optic broadband with
-									up to 1,000Mbps unrestricted symmetrical service to our
-									Members. In late 2023 there were around 500 such connections,
-									funded by the government's Rural Gigabit Voucher Scheme.
-								</p>
-								<p>
-									Tove Valley Broadband or TVB as it has come to be known,
-									brings a very fast 10,000Mbps symetrical fibre-optic internet
-									connection into the villages and distributes connections to
-									properties by fibre-optics or by radio. Our service is
-									unrestricted but Members sign up to a "fair use" agreement.
-								</p>
+								</button>
 							</div>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<div class="accordion-header">
-							<button
-								class="accordion-button collapsed bg-white text-dark"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#collapseInfrastructure"
-								aria-expanded="true"
-								aria-controls="collapseInfrastructure"
+							<div
+								id="collapseCompany"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionCompany"
 							>
-								<i class="bi bi-hdd-network text-success"></i>
-								<span class="px-2">Infrastructure</span>
-							</button>
-						</div>
-						<div
-							id="collapseInfrastructure"
-							class="accordion-collapse collapse"
-							data-bs-parent="#accordionInfrastructure"
-						>
-							<div class="accordion-body">
-								<p>
-									The infrastructure cables are rodent proof 9mm corrugated
-									steel armoured outer containing a loose tube of 12 fibre-optic
-									strands. Any strain on the outer tube should not damage the
-									fibres - at least that's the theory.
-								</p>
-								<p>
-									We bury the cable between 0.5 and 1.0m deep depending upon the
-									ground use and sometimes more for special circumstances. With
-									3" of soil pushed back over the cable, we lay a green tape,
-									then re-fill the trench, finally seeding the surface. It is
-									generally not possible to see where we have been within 4
-									months of the construction.
-								</p>
-								<p>
-									At strategic points we construct an inspection chamber which
-									eventually contains fibre junctions and feeds to properties.
-									We have a variation of cables availble to feed the properties
-									from thin tuff cables to water pipes and drainage ducts which
-									can contain fibre cables.
-								</p>
+								<div class="accordion-body">
+									<p>
+										Abthorpe Broadband Association Limited - a not-for-profit
+										limited by guarantee company - is a volunteer run
+										organisation and has been connecting houses to fibre-optic
+										broadband with up to 1,000Mbps unrestricted symmetrical
+										service to our Members. In late 2023 there were around 500
+										such connections, funded by the government's Rural Gigabit
+										Voucher Scheme.
+									</p>
+									<p>
+										Tove Valley Broadband or TVB as it has come to be known,
+										brings a very fast 10,000Mbps symetrical fibre-optic
+										internet connection into the villages and distributes
+										connections to properties by fibre-optics or by radio. Our
+										service is unrestricted but Members sign up to a "fair use"
+										agreement.
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- Images in a row -->
-				<section class="container-fluid">
-					<div class="row row-cols-1 row-cols-sm-3 g-3 p-3">
-						<div class="col">
-							<img
-								src="images/tvb-infrastructure-cabling-3-sm.jpg"
-								class="img-fluid"
-								alt="tvb-infrastructure-cabling"
-							/>
-						</div>
-						<div class="col">
-							<img
-								src="images/tvb-coverage-map-sm.jpg"
-								class="img-fluid"
-								alt="tvb-coverage-map"
-							/>
-						</div>
-						<div class="col">
-							<img
-								src="images/tvb-infrastructure-chimney-2-sm.jpg"
-								class="img-fluid"
-								alt="tvb-infrastructure-chimney"
-							/>
-						</div>
-					</div>
-				</section>
-			</article>
-			<article id="history" class="container-sm">
-				<h2>Our History</h2>
-				<div class="accordion" id="accordionHistory">
-					<div class="accordion-item">
-						<div class="accordion-header">
-							<button
-								class="accordion-button collapsed bg-white text-dark"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#collapseHistory-2003"
-								aria-expanded="true"
-								aria-controls="collapseHistory-2003"
+						<div class="accordion-item">
+							<div class="accordion-header">
+								<button
+									class="accordion-button collapsed bg-white text-dark"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseInfrastructure"
+									aria-expanded="true"
+									aria-controls="collapseInfrastructure"
+								>
+									<i class="bi bi-hdd-network text-success"></i>
+									<span class="px-2">Infrastructure</span>
+								</button>
+							</div>
+							<div
+								id="collapseInfrastructure"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionInfrastructure"
 							>
-								<i class="bi bi-calendar text-success"></i>
-								<span class="px-2">2003 ....</span>
-							</button>
-						</div>
-						<div
-							id="collapseHistory-2003"
-							class="accordion-collapse collapse"
-							data-bs-parent="#accordionHistory"
-						>
-							<div class="accordion-body">
-								<p>
-									"Not in my life-time" - a term often heard in the rural
-									backwaters of England since the beginning of the 21st century.
-									What we are referring to is, of course, is half-decent
-									broadband.
-								</p>
-								<p>
-									But in middle-England there are those of us who would not take
-									this state sitting down. In the village of Abthorpe, a
-									120-house ”Royalist” Stronghold in the upper Tove valley in
-									Northamptonshire, a group of us led by Eric decided to change
-									the face of broadband delivery in the area for ever.
-								</p>
-								<p>
-									Dial-up connection to the internet at 0.024Mbps was improved
-									dramatically in 2003 with a community supported satellite data
-									connection to Belgium and provided "always on" broadband at
-									1.0Mbps download and 0.25Mbps upload. This served 50 houses
-									distributed across the roof-tops by 2.4Ghz WiFi. Cantennea
-									(had to be Scotch cans), Fish-fryers (3-foot mesh reflectors)
-									and commercial antennae were used in an effort to maximise
-									radio connection and reduce interference. Lots of fun with
-									RG-142 co-ax and SMA connectors! However, we did have to train
-									Google that we were English, not French!
-								</p>
-								<p>
-									In 2007 BT enabled the not-so-local exchange for ADSL so we
-									changed from satellite to 4 land-line business connections
-									which allowed us to distribute the service to our now 60
-									members. Each line provided about 2/0.5Mbps. [and ADSL is
-									still therabouts in 2025]
-								</p>
+								<div class="accordion-body">
+									<p>
+										The infrastructure cables are rodent proof 9mm corrugated
+										steel armoured outer containing a loose tube of 12
+										fibre-optic strands. Any strain on the outer tube should not
+										damage the fibres - at least that's the theory.
+									</p>
+									<p>
+										We bury the cable between 0.5 and 1.0m deep depending upon
+										the ground use and sometimes more for special circumstances.
+										With 3" of soil pushed back over the cable, we lay a green
+										tape, then re-fill the trench, finally seeding the surface.
+										It is generally not possible to see where we have been
+										within 4 months of the construction.
+									</p>
+									<p>
+										At strategic points we construct an inspection chamber which
+										eventually contains fibre junctions and feeds to properties.
+										We have a variation of cables availble to feed the
+										properties from thin tuff cables to water pipes and drainage
+										ducts which can contain fibre cables.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="accordion-item">
-						<div class="accordion-header">
-							<button
-								class="accordion-button collapsed bg-white text-dark"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#collapseHistory-2013"
-								aria-expanded="true"
-								aria-controls="collapseHistory-2013"
+					<!-- Images in a row -->
+					<section class="container-fluid">
+						<div class="row row-cols-1 row-cols-sm-3 g-3 p-3">
+							<div class="col">
+								<img
+									src="images/tvb-infrastructure-cabling-3-sm.jpg"
+									class="img-fluid"
+									alt="tvb-infrastructure-cabling"
+								/>
+							</div>
+							<div class="col">
+								<img
+									src="images/tvb-coverage-map-sm.jpg"
+									class="img-fluid"
+									alt="tvb-coverage-map"
+								/>
+							</div>
+							<div class="col">
+								<img
+									src="images/tvb-infrastructure-chimney-2-sm.jpg"
+									class="img-fluid"
+									alt="tvb-infrastructure-chimney"
+								/>
+							</div>
+						</div>
+					</section>
+				</article>
+				<article id="history" class="container-sm">
+					<h2>Our History</h2>
+					<div class="accordion" id="accordionHistory">
+						<div class="accordion-item">
+							<div class="accordion-header">
+								<button
+									class="accordion-button collapsed bg-white text-dark"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseHistory-2003"
+									aria-expanded="true"
+									aria-controls="collapseHistory-2003"
+								>
+									<i class="bi bi-calendar text-success"></i>
+									<span class="px-2">2003 ....</span>
+								</button>
+							</div>
+							<div
+								id="collapseHistory-2003"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionHistory"
 							>
-								<i class="bi bi-calendar text-success"></i>
-								<span class="px-2">2013 ....</span>
-							</button>
-						</div>
-						<div
-							id="collapseHistory-2013"
-							class="accordion-collapse collapse"
-							data-bs-parent="#accordionHistory"
-						>
-							<div class="accordion-body">
-								<p>
-									In 2013 we expanded the community group to include 5 more
-									villages, even co-operating with ”Parlimentarians”, and fed
-									the main point of presence with a 100/100Mbps fibre backhaul
-									courtesy of the local schoool, 6degrees and BT wholesale. We
-									upgraded our equipment at premises to integrated 5Ghz
-									antenna-radio-ethernet Ubiquity units and utilised radio pipes
-									at 100/100Mbps between the villages. Our membership increased
-									to over 200. This model worked very well but within a year,
-									the radio pipes were beginning to heat the surrounding air
-									and, with increasing membership, contention on the service was
-									only going to get worse.
-								</p>
-								<p>
-									In 2014-2015, with the aid of £108K from government and £170K
-									loans raised in the communities, we laid more than 12km of
-									24-core fibres over farmland, under streams, across roads and
-									into radio access points in each village. These access points
-									were (and some still are) hosted on churches, a school, farm
-									buildings and homes - even a grain silo. Our backhaul was
-									changed to a direct Telehouse connection with a
-									1,000/1,000Mbps service. To keep our principle of DIY wherever
-									possible, we chose GPON architecture which allows us to extend
-									our fibre network with in-house expertise.
-								</p>
-								<p>
-									By April, 2015 we had a very fast high-bandwidth supply to
-									each village with some low-volume radio extensions to other
-									neighbouring villages who wanted to join our enterprise. We
-									were delivering between 30 and 100Mbps symmetrical broadband
-									service by radio to the majority of 700 members.
-								</p>
-								<p>
-									In 2019 we embarked upon grant-aided projects to deliver fibre
-									to the premises (FTTP) with a full 1,000/1,000Mbps connection.
-									We are among the top world rankings for average and peak
-									speeds experienced. To support this expansion, our backhaul
-									was increased to 10Gbps symmetrical and we retained the
-									original, but now 1Gbps backhaul as an automatic fail-over
-									backup connection.
-								</p>
+								<div class="accordion-body">
+									<p>
+										"Not in my life-time" - a term often heard in the rural
+										backwaters of England since the beginning of the 21st
+										century. What we are referring to is, of course, is
+										half-decent broadband.
+									</p>
+									<p>
+										But in middle-England there are those of us who would not
+										take this state sitting down. In the village of Abthorpe, a
+										120-house ”Royalist” Stronghold in the upper Tove valley in
+										Northamptonshire, a group of us led by Eric decided to
+										change the face of broadband delivery in the area for ever.
+									</p>
+									<p>
+										Dial-up connection to the internet at 0.024Mbps was improved
+										dramatically in 2003 with a community supported satellite
+										data connection to Belgium and provided "always on"
+										broadband at 1.0Mbps download and 0.25Mbps upload. This
+										served 50 houses distributed across the roof-tops by 2.4Ghz
+										WiFi. Cantennea (had to be Scotch cans), Fish-fryers (3-foot
+										mesh reflectors) and commercial antennae were used in an
+										effort to maximise radio connection and reduce interference.
+										Lots of fun with RG-142 co-ax and SMA connectors! However,
+										we did have to train Google that we were English, not
+										French!
+									</p>
+									<p>
+										In 2007 BT enabled the not-so-local exchange for ADSL so we
+										changed from satellite to 4 land-line business connections
+										which allowed us to distribute the service to our now 60
+										members. Each line provided about 2/0.5Mbps. [and ADSL is
+										still therabouts in 2025]
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="accordion-item">
-						<div class="accordion-header">
-							<button
-								class="accordion-button collapsed bg-white text-dark"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#collapseHistory-2023"
-								aria-expanded="true"
-								aria-controls="collapseHistory-2023"
+						<div class="accordion-item">
+							<div class="accordion-header">
+								<button
+									class="accordion-button collapsed bg-white text-dark"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseHistory-2013"
+									aria-expanded="true"
+									aria-controls="collapseHistory-2013"
+								>
+									<i class="bi bi-calendar text-success"></i>
+									<span class="px-2">2013 ....</span>
+								</button>
+							</div>
+							<div
+								id="collapseHistory-2013"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionHistory"
 							>
-								<i class="bi bi-calendar text-success"></i>
-								<span class="px-2">2023 ....</span>
-							</button>
+								<div class="accordion-body">
+									<p>
+										In 2013 we expanded the community group to include 5 more
+										villages, even co-operating with ”Parlimentarians”, and fed
+										the main point of presence with a 100/100Mbps fibre backhaul
+										courtesy of the local schoool, 6degrees and BT wholesale. We
+										upgraded our equipment at premises to integrated 5Ghz
+										antenna-radio-ethernet Ubiquity units and utilised radio
+										pipes at 100/100Mbps between the villages. Our membership
+										increased to over 200. This model worked very well but
+										within a year, the radio pipes were beginning to heat the
+										surrounding air and, with increasing membership, contention
+										on the service was only going to get worse.
+									</p>
+									<p>
+										In 2014-2015, with the aid of £108K from government and
+										£170K loans raised in the communities, we laid more than
+										12km of 24-core fibres over farmland, under streams, across
+										roads and into radio access points in each village. These
+										access points were (and some still are) hosted on churches,
+										a school, farm buildings and homes - even a grain silo. Our
+										backhaul was changed to a direct Telehouse connection with a
+										1,000/1,000Mbps service. To keep our principle of DIY
+										wherever possible, we chose GPON architecture which allows
+										us to extend our fibre network with in-house expertise.
+									</p>
+									<p>
+										By April, 2015 we had a very fast high-bandwidth supply to
+										each village with some low-volume radio extensions to other
+										neighbouring villages who wanted to join our enterprise. We
+										were delivering between 30 and 100Mbps symmetrical broadband
+										service by radio to the majority of 700 members.
+									</p>
+									<p>
+										In 2019 we embarked upon grant-aided projects to deliver
+										fibre to the premises (FTTP) with a full 1,000/1,000Mbps
+										connection. We are among the top world rankings for average
+										and peak speeds experienced. To support this expansion, our
+										backhaul was increased to 10Gbps symmetrical and we retained
+										the original, but now 1Gbps backhaul as an automatic
+										fail-over backup connection.
+									</p>
+								</div>
+							</div>
 						</div>
-						<div
-							id="collapseHistory-2023"
-							class="accordion-collapse collapse"
-							data-bs-parent="#accordionHistory"
-						>
-							<div class="accordion-body">
-								<p>
-									By the end of 2023, from a total of over 700 Members, we have
-									nearly 500 connected directly to 2500Mbps capable symmetrical
-									fibre-optic broadband and 200 Members on radio delivered
-									broadband at better than 30Mbps. All connections have no
-									restrictions and are charged at £15/month.
-								</p>
-								<p>
-									There is plenty of real evidence that this service has greatly
-									helped the economy of the area with increased employment and
-									expanding population. With our super-superfast broadband,
-									streaming TV and films and VOIP telephone services replacing
-									landlines, the average spend on all communication services,
-									excluding mobile phones, is less than £20/month – previously
-									the cost of just a line rental.
-								</p>
-								<p>
-									Our erstwhile chairman and one of the founder members of the
-									Abthorpe Broadband Association (in 2003), Eric, was awarded
-									the Member of the Order of the British Empire (MBE) in the new
-									year 2024 King's honours for service to the community. Eric
-									says that whereas other awards he received in the past are
-									directly associated with and on behalf of the teams of
-									volunteers, this award is more personal. He is humbled by the
-									recognition of the communities and of course, the King, of the
-									part he has played in delivering superfast and gigabit fibre
-									broadband services to the Tove Valley businesses and
-									residents.
-								</p>
-								<p>
-									In 2019 we embarked upon grant-aided projects to deliver fibre
-									to the premises (FTTP) with a full 1,000/1,000Mbps connection.
-									We are among the top world rankings for average and peak
-									speeds experienced. To support this expansion, our backhaul
-									was increased to 10Gbps symmetrical and we retained the
-									original, but now 1Gbps backhaul as an automatic fail-over
-									backup connection.
-								</p>
+						<div class="accordion-item">
+							<div class="accordion-header">
+								<button
+									class="accordion-button collapsed bg-white text-dark"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseHistory-2023"
+									aria-expanded="true"
+									aria-controls="collapseHistory-2023"
+								>
+									<i class="bi bi-calendar text-success"></i>
+									<span class="px-2">2023 ....</span>
+								</button>
+							</div>
+							<div
+								id="collapseHistory-2023"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionHistory"
+							>
+								<div class="accordion-body">
+									<p>
+										By the end of 2023, from a total of over 700 Members, we
+										have nearly 500 connected directly to 2500Mbps capable
+										symmetrical fibre-optic broadband and 200 Members on radio
+										delivered broadband at better than 30Mbps. All connections
+										have no restrictions and are charged at £15/month.
+									</p>
+									<p>
+										There is plenty of real evidence that this service has
+										greatly helped the economy of the area with increased
+										employment and expanding population. With our
+										super-superfast broadband, streaming TV and films and VOIP
+										telephone services replacing landlines, the average spend on
+										all communication services, excluding mobile phones, is less
+										than £20/month – previously the cost of just a line rental.
+									</p>
+									<p>
+										Our erstwhile chairman and one of the founder members of the
+										Abthorpe Broadband Association (in 2003), Eric, was awarded
+										the Member of the Order of the British Empire (MBE) in the
+										new year 2024 King's honours for service to the community.
+										Eric says that whereas other awards he received in the past
+										are directly associated with and on behalf of the teams of
+										volunteers, this award is more personal. He is humbled by
+										the recognition of the communities and of course, the King,
+										of the part he has played in delivering superfast and
+										gigabit fibre broadband services to the Tove Valley
+										businesses and residents.
+									</p>
+									<p>
+										In 2019 we embarked upon grant-aided projects to deliver
+										fibre to the premises (FTTP) with a full 1,000/1,000Mbps
+										connection. We are among the top world rankings for average
+										and peak speeds experienced. To support this expansion, our
+										backhaul was increased to 10Gbps symmetrical and we retained
+										the original, but now 1Gbps backhaul as an automatic
+										fail-over backup connection.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</article>
+				</article>
+			</section>
 		</main>
 		<footer class="container-fluid bg-secondary bg-gradient bg-opacity-75">
 			<div class="text-center py-3">
