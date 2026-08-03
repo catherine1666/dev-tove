@@ -21,15 +21,7 @@ h1,
 h2,
 h3,
 serif {
-	font-family: "Cinzel", Georgia, serif;
-}
-h4,
-h5,
-h6,
-p,
-span,
-nonserif {
-	font-family: "Cinzel", Georgia, serif;
+	font-family: "Libertinus+Math", Georgia, serif;
 }
 /* Font sizes */
 .fontsize-sm {

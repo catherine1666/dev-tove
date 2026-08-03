@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>TVSB About Us Page</title>
+		<title>TVSB Support Page</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -79,12 +79,7 @@
 								<a class="nav-link text-white" href="/index.html">Home</a>
 							</li>
 							<li class="nav-item px-2">
-								<a
-									class="nav-link text-white active"
-									aria-current="page"
-									href="aboutus.html"
-									>About Us</a
-								>
+								<a class="nav-link text-white" href="aboutus.html">About Us</a>
 							</li>
 							<li class="nav-item px-2">
 								<a class="nav-link text-white" href="#">Services</a>
@@ -93,7 +88,12 @@
 								<a class="nav-link text-white" href="#">News</a>
 							</li>
 							<li class="nav-item px-2">
-								<a class="nav-link text-white" href="/support.html">Support</a>
+								<a
+									class="nav-link text-white active"
+									aria-current="page"
+									href="#"
+									>Support</a
+								>
 							</li>
 							<li class="nav-item px-2">
 								<a class="nav-link text-white" href="#">Register</a>
@@ -108,59 +108,75 @@
 			<div class="container-fluid bg-warning text-dark">DRAFT WEBSITE</div>
 		</header>
 		<main class="navbar-padding">
-			<h1>About Us</h1>
+			<h1>Support</h1>
+			<!-- System Status -->
+			<div class="container-md bg-success text-light text-center p-2">
+				<p>
+					Status Report for Tove Valley Broadband areas:<br />
+					2026-07-30 10:45: There are no known service problems in the Tove
+					Valley network
+				</p>
+				<hr />
+				<p>
+					If you have experienced issues with your broadband, please click
+					below:
+				</p>
+				<a href="#">
+					<button type="button" class="btn btn-danger">
+						<div class="d-flex align-items-center">
+							<span class="px-2">Report a problem</span>
+						</div>
+					</button>
+				</a>
+			</div>
 			<!-- Introduction paragraph -->
 			<section class="container-sm pt-3">
-				<p>
-					Tove Valley Broadband brings a very fast 10,000Mbps symetrical
-					fibre-optic internet connection into some villages in the Tove Valley
-					and distributes connections to properties by fibre-optics or by radio.
-				</p>
+				<p>For other support, please select an option below:</p>
 			</section>
 			<!-- Page link buttons -->
-			<div class="container-md text-center pt-3">
+			<div class="container-md text-center">
 				<div class="btn-group" role="group" aria-label="Section Options">
-					<a href="#what-we-do">
+					<a href="#">
 						<button
 							type="button"
 							class="btn btn-outline-secondary text-dark mx-3 rounded-0"
 						>
 							<div class="d-flex align-items-center fontsize-sm">
-								<i class="bi bi-hdd-network"></i>
-								<span class="px-2">What we do</span>
+								<i class="bi bi-telephone"></i>
+								<span class="px-2">Login-helpline</span>
 							</div>
 						</button>
 					</a>
-					<a href="#history">
+					<a href="#faqs">
 						<button
 							type="button"
 							class="btn btn-outline-secondary text-dark mx-3 rounded-0"
 						>
 							<div class="d-flex align-items-center fontsize-sm">
-								<i class="bi bi-book"></i>
-								<span class="px-2">History</span>
+								<i class="bi bi-question-circle"></i>
+								<span class="px-2">FAQs</span>
 							</div>
 						</button>
 					</a>
-					<a href="#team">
+					<a href="#information">
 						<button
 							type="button"
 							class="btn btn-outline-secondary text-dark mx-3 rounded-0"
 						>
 							<div class="d-flex align-items-center fontsize-sm">
-								<i class="bi bi-people-fill"></i>
-								<span class="px-2">Our Team</span>
+								<i class="bi bi-info-circle"></i>
+								<span class="px-2">Information</span>
 							</div>
 						</button>
 					</a>
-					<a href="#gallery">
+					<a href="#">
 						<button
 							type="button"
 							class="btn btn-outline-secondary text-dark mx-3 rounded-0"
 						>
 							<div class="d-flex align-items-center fontsize-sm">
-								<i class="bi bi-camera"></i>
-								<span class="px-2">Gallery</span>
+								<i class="bi bi-pencil-square"></i>
+								<span class="px-2">Register</span>
 							</div>
 						</button>
 					</a>
@@ -168,47 +184,91 @@
 			</div>
 			<hr />
 			<!-- Information Section -->
-			<article id="what-we-do" class="container-sm">
-				<h2>What we do</h2>
-				<div class="accordion" id="accordionCompany">
+			<article id="faqs" class="container-sm">
+				<h2>FAQs</h2>
+				<p>
+					Hopefully, your query will be covered in one of the sections below. If
+					you do not find answers to your questions, please use our Contact Us
+					form.
+				</p>
+				<div class="accordion" id="accordionEmails">
 					<div class="accordion-item">
 						<div class="accordion-header">
 							<button
-								class="accordion-button collapsed bg-white text-dark px-2"
+								class="accordion-button collapsed bg-white text-dark"
 								type="button"
 								data-bs-toggle="collapse"
-								data-bs-target="#collapseCompany"
+								data-bs-target="#collapseEmails"
 								aria-expanded="true"
-								aria-controls="collapseCompany"
+								aria-controls="collapseEmails"
 							>
-								<img
-									src="/images/logo-tove-valley.png"
-									class="img-logo-xs pe-2"
-								/>
-								<!-- <span class="fw-light fst-italic text-success pe-2">ABba</span
-								> -->Abthorpe Broadband Association Limited (ABba) - Tove Valley Broadband (TVB)
+								<i class="bi bi-envelope-at text-success"></i>
+								<span class="px-2">Emails</span>
 							</button>
 						</div>
 						<div
-							id="collapseCompany"
+							id="collapseEmails"
 							class="accordion-collapse collapse"
-							data-bs-parent="#accordionCompany"
+							data-bs-parent="#accordionEmails"
 						>
 							<div class="accordion-body">
 								<p>
-									Abthorpe Broadband Association Limited - a not-for-profit
-									limited by guarantee company - is a volunteer run organisation
-									and has been connecting houses to fibre-optic broadband with
-									up to 1,000Mbps unrestricted symmetrical service to our
-									Members. In late 2023 there were around 500 such connections,
-									funded by the government's Rural Gigabit Voucher Scheme.
+									If you suddenly cannot send emails (they sit in your outbox
+									forever) then change your SMTP outgoing service port to 2500
+									instead of 25. Microsoft has issued an automatic update to
+									their security systems on Windows which is causing this
+									problem with some email clients.
 								</p>
 								<p>
-									Tove Valley Broadband or TVB as it has come to be known,
-									brings a very fast 10,000Mbps symetrical fibre-optic internet
-									connection into the villages and distributes connections to
-									properties by fibre-optics or by radio. Our service is
-									unrestricted but Members sign up to a "fair use" agreement.
+									If you are having other difficulties with your emails, please
+									go to Members page, log in to your Tove Valley account, go to
+									'My eMails' and visit 'eMail instructions'
+								</p>
+								<h6 class="text-success">
+									Will I still be able to use my existing e-mail address?
+								</h6>
+								<p>
+									Probably. If you use web-based e-mail (ie Hotmail or Gmail)
+									there will certainly be no problem. If your email address is
+									tied into your current broadband provider, e.g.
+									btinternet.com, then you may or may not be able to use it
+									after you cancel. Some ISP’s require you to access your mail
+									via their own service – you should check this with your ISP.
+									If you have any doubts or questions, try the on-line help for
+									your ISP or talk to us and we will help you. However, we can
+									give you a couple of new e-mail addresses (see below).
+									Changing your default email account to a new one can still
+									overlap your old one for a transitionary period. We find that
+									in 6 months, the old email address is forgotten.
+								</p>
+								<h6 class="text-success">
+									But my e-mail address is part of my existing deal with my
+									dial-up ISP.
+								</h6>
+								<p>
+									If your ISP does not provide the e-mail facility free of
+									charge, and you don't wish to change the address, then you
+									would need to continue the subscription. In our experience, if
+									you got a new eMail address (we can give these) it takes about
+									6 months to - fairly automatically - get to a point where you
+									can cancel your old address.
+								</p>
+								<h6 class="text-success">
+									Will there be a new e-mail addresses available to use?
+								</h6>
+								<p>
+									No. We recommend you get a free email service from Google or
+									Microsoft.
+								</p>
+								<h6 class="text-success">
+									Is Webmail available with TVB email addresses?
+								</h6>
+								<p>
+									Yes. You can view and send emails from anywhere in the world
+									you can get an internet connection. The universal link to
+									webmail for any of our email addresses is
+									www.tovevalley.uk/webmail You can get a description and
+									instructions for webmail here.
 								</p>
 							</div>
 						</div>
@@ -219,40 +279,185 @@
 								class="accordion-button collapsed bg-white text-dark"
 								type="button"
 								data-bs-toggle="collapse"
-								data-bs-target="#collapseInfrastructure"
+								data-bs-target="#collapseBroadband"
 								aria-expanded="true"
-								aria-controls="collapseInfrastructure"
+								aria-controls="collapseBroadband"
 							>
 								<i class="bi bi-hdd-network text-success"></i>
-								<span class="px-2">Infrastructure</span>
+								<span class="px-2">Broadband</span>
 							</button>
 						</div>
 						<div
-							id="collapseInfrastructure"
+							id="collapseBroadband"
 							class="accordion-collapse collapse"
-							data-bs-parent="#accordionInfrastructure"
+							data-bs-parent="#accordionBroadband"
 						>
 							<div class="accordion-body">
+								<h6 class="text-success">
+									What is broadband and superfast broadband?
+								</h6>
 								<p>
-									The infrastructure cables are rodent proof 9mm corrugated
-									steel armoured outer containing a loose tube of 12 fibre-optic
-									strands. Any strain on the outer tube should not damage the
-									fibres - at least that's the theory.
+									Broadband is a term used to describe an "always on" connection
+									to the internet. The minimum speed for Broadband is generally
+									considered to be a download speed of at least 512Kbps.
+									Currently, speeds over BT lines in the upper Tove Valley are
+									around 0.5 to 2.0Mbps, using the highest service obtainable
+									via ADSL. These speeds are only just capable of handling
+									iPlayer and Skype and if others are using the internet, it
+									soon shows up as the dreaded "buffering" or "loading" sign.
 								</p>
 								<p>
-									We bury the cable between 0.5 and 1.0m deep depending upon the
-									ground use and sometimes more for special circumstances. With
-									3" of soil pushed back over the cable, we lay a green tape,
-									then re-fill the trench, finally seeding the surface. It is
-									generally not possible to see where we have been within 4
-									months of the construction.
+									Superfast broadband is defined by the EU as a service which
+									can deliver download speeds of at least 30Mbps. The Tove
+									Valley Broadband has two connections into the internet running
+									at 10000Mbps symmetrical - that is, download and upload, and
+									1000Mbps. We have two independent internet connections so that
+									if one fails, the other one can take up the slack for a while.
+									If you get TVB service via radio, you should get better than
+									30Mbps download and upload depending upon the distance of your
+									radio link. If you get your service via fibre-optic lines,
+									then you should get better than 500Mbps - if fact up to
+									1,000Mbps. Of course these speeds depend upon your own
+									equipment which will have to be pretty modern to take
+									advantage.
+								</p>
+								<h6 class="text-success">
+									I have an existing service with (BT, AOL, Orange, TalkTalk,
+									etc.) What do I do?
+								</h6>
+								<p>
+									If you want to join the Tove Valley system (you get better
+									speeds and there is a local support network available) you
+									should first look at the contract you have with your broadband
+									supplier and arrange to change or cancel that contract. You
+									will need to wait until the minimum period of the contract has
+									expired. If you have an inclusive service (telephone calls
+									with broadband), you should investigate carefully how you can
+									cancel the broadband part of the deal.
+								</p>
+								<h6 class="text-success">
+									What restrictions will there be on my usage of the internet?
+								</h6>
+								<p>
+									The speed should be better than 30Mbps. Where there is a long
+									radio link from you to the nearest access point, speeds may be
+									slower. The speed for a link longer than 2.5km may be lower
+									but we have not experienced speeds below 10Mbps. A higher
+									speed may be available at extra cost (please contact us for
+									details). If you want to do a speed test on your PC, use
+									www.broadbandperformance.co.uk (UK servers) or
+									http://speedtest.att.com/speedtest/ (USA servers) - other
+									common speed checkers are not optimised for superfast speeds.
 								</p>
 								<p>
-									At strategic points we construct an inspection chamber which
-									eventually contains fibre junctions and feeds to properties.
-									We have a variation of cables availble to feed the properties
-									from thin tuff cables to water pipes and drainage ducts which
-									can contain fibre cables.
+									If you want to discuss FTTP - Fibre-to-the-Premise - which
+									delivers 1,000Mbps symetrical, please contact us.
+								</p>
+								<h6 class="text-success">
+									What exactly is the speed of the fibre-optic connection?
+								</h6>
+								<p>
+									The speed of our circuits is 2,500Mbps but most equipment
+									available on the market is 1,000Mbps (1Gbps) capable so you
+									should see speeds in the high hundreds of Mbps even in our
+									most contentious time (Friday evenings) If you want to do a
+									speed test on your PC, use https://speedtest.samknows.com
+								</p>
+								<h6 class="text-success">
+									Why are upload and download speeds different?
+								</h6>
+								<p>
+									Most Broadband provision is "asymmetric". The bandwidth
+									available from the provider is optimised for download because
+									that is what most people are using the connection for most of
+									the time. Tove Valley Broadband service is "symetrical" - you
+									will be able to upload as fast as you can download.
+								</p>
+								<h6 class="text-success">
+									There are lots of concerns about mobile phone masts. Isn’t the
+									wireless network the same?
+								</h6>
+								<p>
+									No. Mobile phones use a much higher power than the Tove Valley
+									network. The equipment we use has a comparatively short range.
+									Indeed the signals from our equipment being used outside are
+									very similar to those that many people use inside their own
+									homes with a personal access point or router (eg BT Home Hub).
+									According to the World Health Organization, RF exposures from
+									routers range from 0.002 percent to 2 percent of those in the
+									international levels of exposure guidelines. The WHO says this
+									is lower than RF exposures from radio or TVs, and adds that
+									the body absorbs up to five times more of the signal from FM
+									radio and television. The organization also notes that radio
+									and TV broadcast stations have been in operation for more than
+									50 years without adverse health consequences. And the WHO
+									dismissed another common concern—that RF rays can increase
+									body temperature—by noting that temperature increases are so
+									insignificant that they cannot affect human health.
+								</p>
+								<h6 class="text-success">
+									If the network is wireless, won’t anyone just be able to
+									access the connection?
+								</h6>
+								<p>
+									No. There is authentication for those who have registered with
+									us. Unauthorised access will be rejected.
+								</p>
+								<h6 class="text-success">
+									Does the system run encryption on the wireless network?
+								</h6>
+								<p>Yes.</p>
+								<h6 class="text-success">
+									If my computer is always connected to the internet, won’t that
+									allow people to hack in and cause trouble?
+								</h6>
+								<p>
+									We have a firewall on our gateways that prevents any
+									unauthorised access from the internet into our network.
+									Premises are doubly protected becasue the CPE radio and ONU
+									fibre devices we supply are also gateways and not even anyone
+									within our network can access equipment in your home. You
+									would only need a firewall if you did not trust individuals
+									within your member network. You should however still maintain
+									a robust anti-virus system.
+								</p>
+								<h6 class="text-success">
+									I sometimes use my computer to send and receive faxes - how
+									will this be affected?
+								</h6>
+								<p>
+									You will still need your modem and a connection to the
+									telephone line for faxes. However, there are on-line services
+									available where faxes are sent and received to and from your
+									e-mail. This may be worth considering if you use faxes a lot.
+								</p>
+								<h6 class="text-success">
+									What happens if everyone wants to use the connection at the
+									same time?
+								</h6>
+								<p>
+									The connection to the internet is shared between all users. In
+									practice we expect our bandwidth to be sufficient to cater for
+									everyone's use. Our main internet connection's bandwidth is
+									10,000Mbps symetrical (i.e. download and upload) and is used
+									only to 20% of capacity even at peak times.
+								</p>
+								<h6 class="text-success">
+									Does the system run encryption on the wireless network?
+								</h6>
+								<p>Yes.</p>
+								<h6 class="text-success">Can I get fibre to my premises?</h6>
+								<p>
+									We are obliged to be able to provide FTTP
+									(fibre-to-the-premises) within the RCBF/DEFRA funded area
+									bounded by the villages of Weston, Lois Weedon, Wappenham,
+									Slapton, Abthorpe and Bradden and the infrastructure will
+									carry this service. To get FTTP we have to run fibre cables
+									from a Point-of-Presence on the fibre network to your
+									premises. You will have to bear the cost of this and
+									guidelines are available in the Library. It might be good to
+									contact us to discuss your options as there are grants
+									available to SMEs.
 								</p>
 							</div>
 						</div>
