@@ -1,5 +1,5 @@
 :root {
-	--scroll-padding: 8.5rem;
+	--scroll-padding: 9rem;
 	/* COLOURS */
 	/* 	--tvsb-btn-primary: 113 83% 21%; */
 	--tvsb-clr-secondary: 204 21% 23%;
@@ -35,6 +35,7 @@ h3 {
 	text-align: center;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	text-wrap: balance;
 	/* 	color: hsl(var(--tvsb-clr-green)); */
 }
 /* BUTTONS */

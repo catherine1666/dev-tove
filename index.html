@@ -90,14 +90,15 @@
 				DRAFT WEBSITE
 			</div>
 		</header>
-		<main class="navbar-padding">
+		<main class="navbar-padding bg-success">
 			<!-- System Status -->
-			<section class="container-fluid text-center bg-success text-white">
-				<div class="pb-1">
+			<section class="container-fluid text-center text-white">
+				<div class="pb-2">
 					<p>
 						2026-07-30 10:45: There are no known service problems in the Tove
 						Valley network.
-						<br />
+					</p>
+					<p>
 						If you have experienced issues with your broadband, please let us
 						know:
 					</p>
@@ -109,29 +110,30 @@
 				</div>
 			</section>
 			<!-- Page Title -->
-			<section class="text-center container-md pb-1">
-				<h1>Welcome to Tove Valley Broadband</h1>
-				<p>
-					Abthorpe Broadband Association Limited - a not-for-profit limited by
-					guarantee company - is a volunteer run organisation and has been
-					connecting houses to fibre-optic broadband with up to 1,000Mbps
-					unrestricted symmetrical service to our Members.
-				</p>
-				<p>
-					Tove Valley Broadband or TVB as it has come to be known, brings a very
-					fast 10,000Mbps symetrical fibre-optic internet connection into the
-					villages and distributes connections to properties by fibre-optics or
-					by radio.
-				</p>
+			<section class="text-center container-fluid pb-2 bg-light">
+				<div class="container-sm">
+					<h1>Welcome to Tove Valley Broadband</h1>
+					<p>
+						Abthorpe Broadband Association Limited - a not-for-profit limited by
+						guarantee company - is a volunteer run organisation and has been
+						connecting houses to fibre-optic broadband with up to 1,000Mbps
+						unrestricted symmetrical service to our Members.
+					</p>
+					<p>
+						Tove Valley Broadband or TVB as it has come to be known, brings a
+						very fast 10,000Mbps symetrical fibre-optic internet connection into
+						the villages and distributes connections to properties by
+						fibre-optics or by radio.
+					</p>
+				</div>
 				<!-- Page link buttons -->
-				<div class="btn-group" role="group" aria-label="Section Options">
+				<div class="btn-group pb-2" role="group" aria-label="Section Options">
 					<a href="#coverage">
 						<button
 							type="button"
 							class="btn btn-outline-secondary text-dark rounded-0"
 						>
 							<div class="d-flex align-items-center">
-								<i class="bi bi-pin-map-fill"></i>
 								<span class="px-2">Coverage</span>
 							</div>
 						</button>
@@ -142,7 +144,6 @@
 							class="btn btn-outline-secondary text-dark rounded-0"
 						>
 							<div class="d-flex align-items-center">
-								<i class="bi bi-tags"></i>
 								<span class="px-2">Costs</span>
 							</div>
 						</button>
@@ -153,24 +154,22 @@
 							class="btn btn-outline-secondary text-dark rounded-0"
 						>
 							<div class="d-flex align-items-center">
-								<i class="bi bi-pencil-square"></i>
 								<span class="px-2">Register</span>
 							</div>
 						</button>
 					</a>
 				</div>
 			</section>
-			<hr />
 			<!-- Coverage -->
-			<section class="container-md text-center">
+			<section class="container-md text-light">
 				<h2 id="coverage" class="text-center pt-2">Our Coverage</h2>
-				<p class="py-1 px-5">
+				<p class="py-1">
 					Tove Valley Superfast Broadband brings 10,000Mbps internet connection
 					to villages in our area with fibre optics and radio.
 				</p>
-				<picture>
+				<div class="container-md">
 					<img
-						class="border border-3 border-dark"
+						class="border border-3 border-dark card-img-top"
 						src="images/tvb-coverage-map-sm.jpg"
 						srcset="
 							images/tvb-coverage-map-sm.jpg  568w,
@@ -178,7 +177,8 @@
 							images/tvb-coverage-map-sm.jpg 2000w
 						"
 						alt="Tove Valley Coverage Map"
-				/></picture>
+					/>
+				</div>
 				<div class="container-sm">
 					<p class="pt-4">
 						Our area of coverage extends to the following villages in South
@@ -186,24 +186,24 @@
 					</p>
 					<div class="text-center">
 						<div class="row row-cols-auto px-5">
-							<div class="col border border-danger">Abthorpe</div>
-							<div class="col border border-danger">Blakelsey</div>
-							<div class="col border border-danger">Bradden</div>
-							<div class="col border border-danger">Falcutt</div>
-							<div class="col border border-danger">Helmdon</div>
-							<div class="col border border-danger">Lois Weedon</div>
-							<div class="col border border-danger">Plumpton</div>
-							<div class="col border border-danger">Slapton</div>
-							<div class="col border border-danger">Wappenham</div>
-							<div class="col border border-danger">Weston</div>
-							<div class="col border border-danger">Woodend</div>
+							<div class="col border">Abthorpe</div>
+							<div class="col border">Bradden</div>
+							<div class="col border">Falcutt</div>
+							<div class="col border">Blakelsey</div>
+							<div class="col border">Helmdon</div>
+							<div class="col border">Lois Weedon</div>
+							<div class="col border">Plumpton</div>
+							<div class="col border">Slapton</div>
+							<div class="col border">Wappenham</div>
+							<div class="col border">Weston</div>
+							<div class="col border">Woodend</div>
 						</div>
 					</div>
+					<p class="pt-4">
+						The definitive test for service capability is to enter your postcode
+						here:
+					</p>
 					<form class="py-3 container-sm">
-						<p>
-							The definitive test for service capability is to enter your
-							postcode here:
-						</p>
 						<div class="row g-3 align-items-center justify-content-center">
 							<div class="col-auto">
 								<label for="InputPostcode" class="form-label">Postcode</label>
@@ -230,47 +230,53 @@
 					</form>
 				</div>
 			</section>
-			<hr />
 			<!-- Costs -->
-			<section id="costs" class="container-md pb-2">
-				<h2 class="text-center pt-4">What it Costs</h2>
-				<p>
-					What it will cost (including VAT) to connect to our broadband (by
-					radio or fibre) - These charges will be invoiced when installation is
-					complete and service established:
-				</p>
-				<ul>
-					<li>
-						£100 membership fee per household/premises. It is a requirement of
-						our not-for-profit Association and pays for the system's
-						infrastructure.
-					</li>
-					<li>
-						£90 installation fee for a radio connection at your premises. If you
-						are moving into a house already connected to TVB by radio this cost
-						may not be charged. OR
-					</li>
-					<li>
-						For a fibre-to-the premises connection, the installation charge
-						depends upon a variety of issues and you must contact us to discuss
-						your requirements. If you are moving into a house already connected
-						to TVB by fibre this cost may not be charged.
-					</li>
-					<li>
-						£180 annual fee for domestic and commercial users. If 5 or more
-						workstations are dependent upon an internet connection, we may
-						charge £540 per annum.
-					</li>
-				</ul>
+			<section id="costs" class="container-fluid pb-2 bg-light">
+				<div class="container">
+					<h2 class="text-center pt-4">What it Costs</h2>
+					<p>
+						What it will cost (including VAT) to connect to our broadband (by
+						radio or fibre) - These charges will be invoiced when installation
+						is complete and service established:
+					</p>
+					<ul>
+						<li>
+							£100 membership fee per household/premises. It is a requirement of
+							our not-for-profit Association and pays for the system's
+							infrastructure.
+						</li>
+						<li>
+							£90 installation fee for a radio connection at your premises. If
+							you are moving into a house already connected to TVB by radio this
+							cost may not be charged. OR
+						</li>
+						<li>
+							For a fibre-to-the premises connection, the installation charge
+							depends upon a variety of issues and you must contact us to
+							discuss your requirements. If you are moving into a house already
+							connected to TVB by fibre this cost may not be charged.
+						</li>
+						<li>
+							£180 annual fee for domestic and commercial users. If 5 or more
+							workstations are dependent upon an internet connection, we may
+							charge £540 per annum.
+						</li>
+					</ul>
+				</div>
 			</section>
-			<hr />
 			<!-- Go Register -->
 			<section>
-				<h2 class="text-center pt-4">Register</h2>
-				<p class="container-sm text-center">
+				<h2 class="text-center text-white pt-4">Register</h2>
+				<p class="container-sm text-center text-light">
 					<button type="button" class="btn btn-secondary">Click here</button>
-					if you would like to register.
+					&nbsp;if you would like to register.
 				</p>
+			</section>
+			<!-- Top of page -->
+			<section class="text-end pb-1 sticky-bottom">
+				<a href="#top" class="nav-link pe-3 fs-4">
+					<i class="bi bi-arrow-up-circle-fill"></i>
+				</a>
 			</section>
 		</main>
 		<footer class="container-fluid bg-secondary bg-gradient bg-opacity-75">
