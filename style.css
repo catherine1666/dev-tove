@@ -52,6 +52,7 @@ h3 {
 	background-color: hsl(var(--tvsb-clr-secondary));
 	border-color: hsl(var(--tvsb-clr-secondary));
 }
+
 /* Accordians */
 .accordion-button:focus,
 .accordion-button:hover,
@@ -70,6 +71,19 @@ h3 {
 	font-size: 1em;
 }
 /* IMAGES */
+.parallax {
+	/* The image used */
+	background-image: url("images/tove-valley-view-xl.jpg");
+
+	/* Set a specific height */
+	min-height: 100dvh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .img-logo-sm {
 	width: 5em;
 	height: auto;
@@ -90,6 +104,10 @@ h3 {
 /* NAV BAR AND FOOTER */
 a.active {
 	text-decoration: underline;
+	background-color: hsl(var(--tvsb-clr-secondary));
+}
+button.active {
+	background-color: hsl(var(--clr-secondary));
 }
 .nav-link:hover,
 .nav-link:focus {
