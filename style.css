@@ -86,8 +86,16 @@ h3 {
 /* IMAGES */
 .parallax {
 	/* The image used */
-	background-image: url("images/tove-valley-view-xl.jpg");
-
+	/* background-image: url("images/tvb-infrastructure-cabling-3-sm.jpg"); */
+	/* background-image: linear-gradient(
+		to bottom,
+		hsl(var(--tvsb-clr-secondary), hsl(var(--tvsb-clr-green)))
+	); */
+	background-image: linear-gradient(
+		to bottom,
+		hsl(var(--tvsb-clr-green)),
+		hsl(var(--tvsb-clr-secondary))
+	);
 	/* Set a specific height */
 	min-height: 100dvh;
 
