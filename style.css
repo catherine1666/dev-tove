@@ -4,6 +4,7 @@
 	/* 	--tvsb-btn-primary: 113 83% 21%; */
 	--tvsb-clr-secondary: 204 21% 23%;
 	--tvsb-clr-light: 214 37% 96%;
+	--tvsb-clr-dark: 216 86% 6%;
 	--tvsb-clr-navy: 216 70% 29%;
 	--tvsb-clr-green: 113 83% 21%;
 	--ombudsman-purple-color: 300 89% 14%;
@@ -52,7 +53,19 @@ h3 {
 	background-color: hsl(var(--tvsb-clr-secondary));
 	border-color: hsl(var(--tvsb-clr-secondary));
 }
-
+.btn-outline-secondary {
+	border: 2px solid hsl(var(--tvsb-clr-dark));
+}
+.btn-outline-secondary.nav-link {
+	background-color: hsl(var(--tvsb-clr-secondary) / 0.5);
+}
+.btn-outline-secondary.active {
+	border: 2px solid hsl(var(--tvsb-clr-light));
+}
+.btn-outline-secondary:hover {
+	background-color: hsl(var(--tvsb-clr-dark));
+	color: hsl(var(--tvsb-clr-light));
+}
 /* Accordians */
 .accordion-button:focus,
 .accordion-button:hover,
@@ -83,6 +96,15 @@ h3 {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	place-content: center;
+	text-align: center;
+}
+.parallax-overlay {
+	border-image: fill 1
+		linear-gradient(
+			hsl(var(--tvsb-clr-secondary) / 0.6),
+			hsl(var(--tvsb-clr-secondary) / 0.5)
+		);
 }
 .img-logo-sm {
 	width: 5em;
@@ -91,6 +113,9 @@ h3 {
 .img-logo-xs {
 	width: 3em;
 	height: auto;
+}
+a.navbar-brand :hover {
+	border: 2px solid hsl(var(--tvsb-clr-green));
 }
 .bg-image {
 	/* 	background-color: aqua; */
@@ -105,9 +130,6 @@ h3 {
 a.active {
 	text-decoration: underline;
 	background-color: hsl(var(--tvsb-clr-secondary));
-}
-button.active {
-	background-color: hsl(var(--clr-secondary));
 }
 .nav-link:hover,
 .nav-link:focus {
