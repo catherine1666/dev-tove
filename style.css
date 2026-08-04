@@ -1,5 +1,5 @@
 :root {
-	--scroll-padding: 9rem;
+	--scroll-padding: 8.5rem;
 	/* COLOURS */
 	/* 	--tvsb-btn-primary: 113 83% 21%; */
 	--tvsb-clr-secondary: 204 21% 23%;
@@ -12,7 +12,6 @@
 body {
 	min-block-size: 100svh;
 	min-height: 100dvh;
-	font-family: Montserrat, Helvetica, sans-serif;
 }
 main {
 	min-height: 100svh;
@@ -21,12 +20,7 @@ main {
 	padding-top: var(--scroll-padding);
 }
 /* TYPOGRAPHY */
-h1,
-h2,
-h3,
-serif {
-	font-family: "Libertinus+Math", Georgia, serif;
-}
+
 /* Font sizes */
 .fontsize-sm {
 	font-size: 0.75em;
@@ -40,7 +34,8 @@ h2,
 h3 {
 	text-align: center;
 	padding-top: 1rem;
-	color: hsl(var(--tvsb-clr-green));
+	padding-bottom: 1rem;
+	/* 	color: hsl(var(--tvsb-clr-green)); */
 }
 /* BUTTONS */
 .btn-ombudsman {
