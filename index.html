@@ -28,14 +28,8 @@
 				DRAFT WEBSITE
 			</div>
 			<!-- Navbar -->
-			<nav class="navbar navbar-expand-sm navbar-dark">
+			<nav class="navbar navbar-expand-sm navbar-dark justify-content-center">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="index.html"
-						><img
-							src="images/logo-tove-valley.png"
-							class="img-logo-xs rounded-circle"
-							alt="Tove Valley Broadband Logo"
-					/></a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -48,7 +42,7 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarNav">
-						<div class="navbar-nav">
+						<div class="navbar-nav mx-auto">
 							<a class="nav-link" href="index.html" aria-current="page"
 								><button
 									type="button"
@@ -65,7 +59,7 @@
 									Register
 								</button></a
 							>
-							<a class="nav-link" href="#"
+							<a class="nav-link" href="sign-in.html"
 								><button
 									type="button"
 									class="btn btn-outline-secondary text-light btn-lg me-1 rounded-1"
@@ -87,33 +81,31 @@
 					</div>
 				</div>
 			</nav>
-			<div class="container-fluid bg-warning text-dark text-center">
-				DRAFT WEBSITE
-			</div>
-		</header>
-		<main class="navbar-padding parallax parallax-overlay">
 			<!-- System Status -->
-			<section class="container-fluid text-center text-white">
-				<div class="pb-2">
-					<p class="bg-success">
-						2026-07-30 10:45: There are no known service problems in the Tove
-						Valley network.
-					</p>
-					<p>
-						If you have experienced issues with your broadband, please let us
-						know:
-					</p>
+			<section class="text-center bg-success text-white mb-0">
+				2026-07-30 10:45: There are no known service problems in the Tove Valley
+				network.
+				<div class="bg-secondary">
+					If you have experienced issues with your broadband, please let us
+					know:
 					<a href="#">
-						<button type="button" class="btn btn-danger btn-lg">
+						<button type="button" class="btn btn-danger">
 							Report a problem
 						</button>
 					</a>
 				</div>
 			</section>
-			<!-- Page Title -->
-			<section class="text-center container-fluid pb-2 bg-light">
+		</header>
+		<main class="navbar-padding">
+			<!-- Page Intro -->
+			<section class="text-center container-fluid pb-2">
 				<div class="container-sm">
 					<h1>Welcome to Tove Valley Broadband</h1>
+					<img
+						src="images/logo-tove-valley.png"
+						class="img-logo-sm rounded-circle pb-2"
+						alt="Tove Valley Broadband Logo"
+					/>
 					<p>
 						Abthorpe Broadband Association Limited - a not-for-profit limited by
 						guarantee company - is a volunteer run organisation and has been
@@ -162,77 +154,79 @@
 				</div>
 			</section>
 			<!-- Coverage -->
-			<section class="container-md text-light">
-				<h2 id="coverage" class="text-center pt-2">Our Coverage</h2>
-				<p class="py-1">
-					Tove Valley Superfast Broadband brings 10,000Mbps internet connection
-					to villages in our area with fibre optics and radio.
-				</p>
+			<section class="bg-secondary-subtle">
 				<div class="container-md">
-					<img
-						class="border border-3 border-dark card-img-top"
-						src="images/tvb-coverage-map-sm.jpg"
-						srcset="
-							images/tvb-coverage-map-sm.jpg  568w,
-							images/tvb-coverage-map-sm.jpg 1000w,
-							images/tvb-coverage-map-sm.jpg 2000w
-						"
-						alt="Tove Valley Coverage Map"
-					/>
-				</div>
-				<div class="container-sm">
-					<p class="pt-4">
-						Our area of coverage extends to the following villages in South
-						Northamptonshire:
+					<h2 id="coverage" class="text-center pt-2">Our Coverage</h2>
+					<p class="py-1">
+						Tove Valley Superfast Broadband brings 10,000Mbps internet
+						connection to villages in our area with fibre optics and radio.
 					</p>
-					<div class="text-center">
-						<div class="row row-cols-auto px-5">
-							<div class="col border">Abthorpe</div>
-							<div class="col border">Bradden</div>
-							<div class="col border">Falcutt</div>
-							<div class="col border">Blakelsey</div>
-							<div class="col border">Helmdon</div>
-							<div class="col border">Lois Weedon</div>
-							<div class="col border">Plumpton</div>
-							<div class="col border">Slapton</div>
-							<div class="col border">Wappenham</div>
-							<div class="col border">Weston</div>
-							<div class="col border">Woodend</div>
-						</div>
+					<div class="container-md">
+						<img
+							class="border border-3 border-dark card-img-top"
+							src="images/tvb-coverage-map-sm.jpg"
+							srcset="
+								images/tvb-coverage-map-sm.jpg  568w,
+								images/tvb-coverage-map-sm.jpg 1000w,
+								images/tvb-coverage-map-sm.jpg 2000w
+							"
+							alt="Tove Valley Coverage Map"
+						/>
 					</div>
-					<p class="pt-4">
-						The definitive test for service capability is to enter your postcode
-						here:
-					</p>
-					<form class="py-3 container-sm">
-						<div class="row g-3 align-items-center justify-content-center">
-							<div class="col-auto">
-								<label for="InputPostcode" class="form-label">Postcode</label>
-							</div>
-							<div class="col-auto">
-								<input
-									type="text"
-									class="form-control"
-									id="InputPostcode"
-									placeholder="NN12 xxx"
-									required
-								/>
-							</div>
-							<div class="col-auto">
-								<button
-									type="submit"
-									class="btn btn-secondary"
-									alt="Check coverage"
-								>
-									Check Coverage
-								</button>
+					<div class="container-sm">
+						<p class="pt-4">
+							Our area of coverage extends to the following villages in South
+							Northamptonshire:
+						</p>
+						<div class="text-center">
+							<div class="row row-cols-auto px-5">
+								<div class="col border">Abthorpe</div>
+								<div class="col border">Bradden</div>
+								<div class="col border">Falcutt</div>
+								<div class="col border">Blakelsey</div>
+								<div class="col border">Helmdon</div>
+								<div class="col border">Lois Weedon</div>
+								<div class="col border">Plumpton</div>
+								<div class="col border">Slapton</div>
+								<div class="col border">Wappenham</div>
+								<div class="col border">Weston</div>
+								<div class="col border">Woodend</div>
 							</div>
 						</div>
-					</form>
+						<p class="pt-4">
+							The definitive test for service capability is to enter your
+							postcode here:
+						</p>
+						<form class="py-3 container-sm">
+							<div class="row g-3 align-items-center justify-content-center">
+								<div class="col-auto">
+									<label for="InputPostcode" class="form-label">Postcode</label>
+								</div>
+								<div class="col-auto">
+									<input
+										type="text"
+										class="form-control"
+										id="InputPostcode"
+										placeholder="NN12 xxx"
+										required
+									/>
+								</div>
+								<div class="col-auto">
+									<button
+										type="submit"
+										class="btn btn-secondary"
+										alt="Check coverage"
+									>
+										Check Coverage
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</section>
 			<!-- Costs -->
-			<section id="costs" class="container-fluid pb-2 bg-light">
+			<section id="costs" class="pb-2">
 				<div class="container">
 					<h2 class="text-center pt-4">What it Costs</h2>
 					<p>
@@ -266,7 +260,7 @@
 				</div>
 			</section>
 			<!-- What we do -->
-			<section id="costs" class="container-fluid pb-2 text-light">
+			<section id="costs" class="pb-2">
 				<div class="container">
 					<h2 class="text-center pt-4">What we do</h2>
 					<p>
@@ -289,7 +283,7 @@
 				</div>
 			</section>
 			<!-- Go Register -->
-			<section class="bg-light">
+			<section class="bg-secondary-subtle">
 				<h2 class="text-center pt-4">Register</h2>
 				<p class="container-sm text-center pb-4">
 					<button type="button" class="btn btn-secondary">Click here</button>
@@ -299,7 +293,7 @@
 			<!-- Top of page -->
 			<section class="text-end pb-1 sticky-bottom">
 				<a href="#top" class="nav-link pe-3 fs-4">
-					<i class="bi bi-arrow-up-circle-fill text-warning"></i>
+					<i class="bi bi-arrow-up-circle-fill"></i>
 				</a>
 			</section>
 		</main>

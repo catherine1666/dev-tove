@@ -1,5 +1,5 @@
 :root {
-	--scroll-padding: 9rem;
+	--scroll-padding: 10rem;
 	/* COLOURS */
 	/* 	--tvsb-btn-primary: 113 83% 21%; */
 	--tvsb-clr-secondary: 204 21% 23%;
@@ -55,6 +55,7 @@ h3 {
 }
 .btn-outline-secondary {
 	border: 2px solid hsl(var(--tvsb-clr-dark));
+	color: hsl(var(--tvsb-clr-dark));
 }
 .btn-outline-secondary.nav-link {
 	background-color: hsl(var(--tvsb-clr-secondary) / 0.5);
@@ -143,7 +144,10 @@ a.active {
 .nav-link:focus {
 	text-decoration: underline;
 }
-
+/* Forms */
+.form-control:hover {
+	border: 2px solid hsl(var(--tvsb-clr-green));
+}
 /* TRANSITION EFFECTS */
 @media (prefers-reduced-motion: no-preference) {
 	:has(:target) {
