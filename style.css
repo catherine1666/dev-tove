@@ -1,5 +1,5 @@
 :root {
-	--scroll-padding: 10rem;
+	--scroll-padding: 6.5em;
 	/* COLOURS */
 	/* 	--tvsb-btn-primary: 113 83% 21%; */
 	--tvsb-clr-secondary: 204 21% 23%;
@@ -54,14 +54,14 @@ h3 {
 	border-color: hsl(var(--tvsb-clr-secondary));
 }
 .btn-outline-secondary {
-	border: 2px solid hsl(var(--tvsb-clr-dark));
+	border: 1px solid hsl(var(--tvsb-clr-secondary));
 	color: hsl(var(--tvsb-clr-dark));
 }
 .btn-outline-secondary.nav-link {
 	background-color: hsl(var(--tvsb-clr-secondary) / 0.5);
 }
 .btn-outline-secondary.active {
-	border: 2px solid hsl(var(--tvsb-clr-light));
+	border: 2px solid hsl(var(--tvsb-clr-secondary));
 }
 .btn-outline-secondary:hover {
 	background-color: hsl(var(--tvsb-clr-dark));
@@ -126,6 +126,11 @@ h3 {
 a.navbar-brand :hover {
 	border: 2px solid hsl(var(--tvsb-clr-green));
 }
+.navbar-toggler {
+	margin: 0 auto;
+	border: 2px solid hsl(var(--tvsb-clr-secondary));
+	color: 2px solid hsl(var(--tvsb-clr-dark));
+}
 .bg-image {
 	/* 	background-color: aqua; */
 	background-image: "images/logo-tove-valley.png";
@@ -154,4 +159,10 @@ a.active {
 		scroll-behavior: smooth;
 		scroll-padding-top: 3rem;
 	}
+}
+/* Anchors */
+#coverage,
+#costs,
+#what-we-do {
+	scroll-margin-top: var(--scroll-padding);
 }
