@@ -1,12 +1,15 @@
 :root {
-	--scroll-padding: 6.5em;
+	--scroll-padding: 76px;
 	/* COLOURS */
 	/* 	--tvsb-btn-primary: 113 83% 21%; */
 	--tvsb-clr-secondary: 204 21% 23%;
 	--tvsb-clr-light: 214 37% 96%;
 	--tvsb-clr-dark: 216 86% 6%;
-	--tvsb-clr-navy: 216 70% 29%;
+	--tvsb-clr-skyblue: 203 100% 90%;
+	--tvsb-clr-blue: 216 70% 29%;
 	--tvsb-clr-green: 113 83% 21%;
+	--tvsb-clr-highlight-green: 115 98% 51%;
+	--tvsb-clr-highlight-yellow: 60 100% 50%;
 	--ombudsman-purple-color: 300 89% 14%;
 	--ombudsman-purple-green: 157 60% 63%;
 }
@@ -20,8 +23,8 @@ main {
 .navbar-padding {
 	padding-top: var(--scroll-padding);
 }
-/* TYPOGRAPHY */
 
+/* TYPOGRAPHY */
 /* Font sizes */
 .fontsize-sm {
 	font-size: 0.75em;
@@ -29,140 +32,73 @@ main {
 .fontsize-xs {
 	font-size: 0.45em;
 }
-/* Alignment */
+/* Headings */
 h1,
 h2,
 h3 {
-	text-align: center;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	text-wrap: balance;
-	/* 	color: hsl(var(--tvsb-clr-green)); */
+	color: hsl(var(--tvsb-clr-blue));
+}
+/* NAVBAR */
+.navbar-brand,
+.nav-link,
+.navbar-toggler {
+	color: hsl(var(--tvsb-clr-blue));
+}
+.navbar-brand {
+	font-size: 2em;
+	padding-inline: 1.5em;
+}
+.nav-link {
+	color: hsl(var(--tvsb-clr-blue));
+	font-size: 1.5em;
+}
+.nav-link:active {
+	color: hsl(var(--tvsb-clr-green));
 }
 /* BUTTONS */
+.btn-outline-primary {
+	color: hsl(var(--tvsb-clr-blue));
+	font-size: 1.5em;
+	background-color: hsl(var(--tvsb-clr-light));
+	border: 2px solid hsl(var(--tvsb-clr-blue));
+}
+.btn-primary {
+	color: hsl(var(--tvsb-clr-light));
+	font-size: 1.2em;
+	background-color: hsl(var(--tvsb-clr-blue));
+	border: 2px solid hsl(var(--tvsb-clr-blue));
+}
+.btn-primary:hover,
+.btn-primary:focus {
+	color: hsl(var(--tvsb-clr-blue));
+	background-color: hsl(var(--tvsb-clr-skyblue));
+	border: 2px solid hsl(var(--tvsb-clr-blue));
+}
+.btn-danger {
+	font-size: 1.5em;
+}
 .btn-ombudsman {
 	background-color: hsl(var(--ombudsman-purple-color));
 	color: hsl(var(--ombudsman-purple-green));
+	font-size: 1.5em;
 }
 .btn-ombudsman:hover {
 	background-color: hsl(var(--ombudsman-purple-color));
 	color: hsl(var(--ombudsman-purple-green));
 	text-decoration: underline;
 }
-.btn-secondary {
-	background-color: hsl(var(--tvsb-clr-secondary));
-	border-color: hsl(var(--tvsb-clr-secondary));
-}
-.btn-outline-secondary {
-	border: 1px solid hsl(var(--tvsb-clr-secondary));
-	color: hsl(var(--tvsb-clr-dark));
-}
-.btn-outline-secondary.nav-link {
-	background-color: hsl(var(--tvsb-clr-secondary) / 0.5);
-}
-.btn-outline-secondary.active {
-	border: 2px solid hsl(var(--tvsb-clr-secondary));
-}
-.btn-outline-secondary:hover {
-	background-color: hsl(var(--tvsb-clr-dark));
-	color: hsl(var(--tvsb-clr-light));
-}
-/* Accordians */
-.accordion-button:focus,
-.accordion-button:hover,
-.accordion-button:active {
-	outline: none;
-	box-shadow: none;
-}
-.accordion-item {
-	font-size: 0.75rem;
-}
-/* ICONS */
-.bi {
-	font-size: 1.5em;
-}
-.bi-envelope-at {
-	font-size: 1em;
-}
-/* IMAGES */
-.parallax {
-	/* The image used */
-	/* background-image: url("images/tvb-infrastructure-cabling-3-sm.jpg"); */
-	/* background-image: linear-gradient(
-		to bottom,
-		hsl(var(--tvsb-clr-secondary), hsl(var(--tvsb-clr-green)))
-	); */
-	background-image: linear-gradient(
-		to bottom,
-		hsl(var(--tvsb-clr-green)),
-		hsl(var(--tvsb-clr-secondary))
-	);
-	/* Set a specific height */
-	min-height: 100dvh;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	place-content: center;
-	text-align: center;
-}
-.parallax-overlay {
+/* LINKS */
+/* BACKGROUNDS */
+.back-gradient {
 	border-image: fill 1
-		linear-gradient(
-			hsl(var(--tvsb-clr-secondary) / 0.6),
-			hsl(var(--tvsb-clr-secondary) / 0.5)
-		);
+		linear-gradient(hsl(var(--tvsb-clr-light)), hsl(var(--tvsb-clr-blue) / 0.5));
 }
-.img-logo-sm {
-	width: 5em;
-	height: auto;
+.status-green {
+	background-color: hsl(var(--tvsb-clr-highlight-green));
 }
-.img-logo-xs {
-	width: 3em;
-	height: auto;
-}
-a.navbar-brand :hover {
-	border: 2px solid hsl(var(--tvsb-clr-green));
-}
-.navbar-toggler {
-	margin: 0 auto;
-	border: 2px solid hsl(var(--tvsb-clr-secondary));
-	color: 2px solid hsl(var(--tvsb-clr-dark));
-}
-.bg-image {
-	/* 	background-color: aqua; */
-	background-image: "images/logo-tove-valley.png";
-	min-height: 100svh;
-	background-image: fixed;
-}
-.card-img-top {
-	background-color: black;
-}
-/* NAV BAR AND FOOTER */
-a.active {
-	text-decoration: underline;
-	background-color: hsl(var(--tvsb-clr-secondary));
-}
-.nav-link:hover,
-.nav-link:focus {
-	text-decoration: underline;
-}
-/* Forms */
-.form-control:hover {
-	border: 2px solid hsl(var(--tvsb-clr-green));
-}
-/* TRANSITION EFFECTS */
-@media (prefers-reduced-motion: no-preference) {
-	:has(:target) {
-		scroll-behavior: smooth;
-		scroll-padding-top: 3rem;
-	}
-}
-/* Anchors */
-#coverage,
-#costs,
-#what-we-do {
-	scroll-margin-top: var(--scroll-padding);
+.status-yellow {
+	background-color: hsl(var(--tvsb-clr-highlight-yellow));
 }

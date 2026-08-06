@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>TVSB Index Page</title>
+		<title>TVSB Home Page</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -16,6 +16,7 @@
 		/>
 		<link rel="stylesheet" href="style.css" type="text/css" />
 		<script
+			defer
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
 			crossorigin="anonymous"
@@ -23,13 +24,11 @@
 		></script>
 	</head>
 	<body>
-		<header class="fixed-top bg-secondary bg-gradient">
-			<div class="container-fluid bg-warning text-dark text-center">
-				DRAFT WEBSITE
-			</div>
+		<header class="fixed-top border-bottom border-3">
 			<!-- Navbar -->
-			<nav class="navbar navbar-expand-sm navbar-dark justify-content-center">
-				<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -41,113 +40,63 @@
 					>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<div class="navbar-nav mx-auto">
-							<a class="nav-link" href="index.html" aria-current="page"
-								><button
-									type="button"
-									class="btn btn-outline-secondary btn-lg active"
-								>
-									Home
-								</button></a
+					<div
+						class="collapse navbar-collapse justify-content-end"
+						id="navbarNav"
+					>
+						<div class="navbar-nav">
+							<a
+								class="nav-link border-end border-secondary active"
+								aria-current="page"
+								href="index.html"
+								>Home</a
 							>
-							<a class="nav-link" href="#"
-								><button
-									type="button"
-									class="btn btn-outline-secondary text-light btn-lg me-1 rounded-1"
-								>
-									Register
-								</button></a
+							<a class="nav-link border-end border-secondary" href="#"
+								>Register</a
 							>
-							<a class="nav-link" href="sign-in.html"
-								><button
-									type="button"
-									class="btn btn-outline-secondary text-light btn-lg me-1 rounded-1"
-								>
-									Sign In
-								</button></a
+							<a class="nav-link border-end border-secondary" href="#"
+								>Sign In</a
 							>
-
-							<a class="nav-link" href="#"
-								><button
-									type="button"
-									class="btn btn-outline-secondary text-light btn-lg rounded-1"
-								>
-									<i class="bi bi-envelope-at"></i>
-									Webmail
-								</button></a
-							>
+							<a class="nav-link" href="#">Webmail </a>
 						</div>
 					</div>
 				</div>
 			</nav>
 		</header>
 		<main class="navbar-padding">
-			<!-- System Status -->
-			<section class="text-center text-white mb-0 px-5">
-				<span class="px-5 bg-success">
-					SYSTEM STATUS 2026-07-30 10:45: There are no known service problems in
-					the Tove Valley network.</span
-				>
-				<div class="bg-secondary">
-					If you have experienced issues with your broadband, please let us
-					know:
-					<a href="#">
-						<button type="button" class="btn btn-danger">
-							Report a problem
-						</button>
-					</a>
-				</div>
-			</section>
 			<!-- Page Intro -->
-			<section class="text-center container-fluid pb-2">
+			<section class="container-fluid text-center back-gradient">
 				<div class="container-sm">
 					<h1>Welcome to Tove Valley Broadband</h1>
-					<img
-						src="images/logo-tove-valley.png"
-						class="img-logo-sm rounded-circle pb-2"
-						alt="Tove Valley Broadband Logo"
-					/>
+
 					<p>
-						Abthorpe Broadband Association Limited - a not-for-profit limited by
-						guarantee company - is a volunteer run organisation and has been
-						connecting houses to fibre-optic broadband with up to 1,000Mbps
-						unrestricted symmetrical service to our Members.
-					</p>
-					<p>
-						Tove Valley Broadband or TVB as it has come to be known, brings a
-						very fast 10,000Mbps symetrical fibre-optic internet connection into
-						the villages and distributes connections to properties by
-						fibre-optics or by radio.
+						Tove Valley Broadband brings a very fast 10,000Mbps symetrical
+						fibre-optic internet connection into the villages it covers and
+						distributes connections to properties by fibre-optics or by radio.
 					</p>
 				</div>
 				<!-- Page link buttons -->
-				<div class="btn-group pb-2" role="group" aria-label="Section Options">
+				<div
+					class="btn-group pt-3 pb-5"
+					role="group"
+					aria-label="Section Options"
+				>
 					<a href="#coverage">
-						<button
-							type="button"
-							class="btn btn-outline-secondary text-dark rounded-0"
-						>
+						<button type="button" class="btn btn-primary mx-2">
 							<div class="d-flex align-items-center">
 								<span class="px-2">Coverage</span>
 							</div>
 						</button>
 					</a>
 					<a href="#costs">
-						<button
-							type="button"
-							class="btn btn-outline-secondary text-dark rounded-0"
-						>
+						<button type="button" class="btn btn-primary mx-2">
 							<div class="d-flex align-items-center">
 								<span class="px-2">Costs</span>
 							</div>
 						</button>
 					</a>
 					<a href="#what-we-do">
-						<button
-							type="button"
-							class="btn btn-outline-secondary text-dark rounded-0"
-						>
+						<button type="button" class="btn btn-primary mx-2">
 							<div class="d-flex align-items-center">
 								<span class="px-2">What we do</span>
 							</div>
@@ -155,76 +104,99 @@
 					</a>
 				</div>
 			</section>
-			<!-- Coverage -->
-			<section class="bg-secondary-subtle">
-				<div class="container-md">
-					<h2 id="coverage" class="text-center pt-2">Our Coverage</h2>
-					<p class="py-1">
-						Tove Valley Superfast Broadband brings 10,000Mbps internet
-						connection to villages in our area with fibre optics and radio.
-					</p>
-					<div class="container-md">
-						<img
-							class="border border-3 border-dark card-img-top"
-							src="images/tvb-coverage-map-sm.jpg"
-							srcset="
-								images/tvb-coverage-map-sm.jpg  568w,
-								images/tvb-coverage-map-sm.jpg 1000w,
-								images/tvb-coverage-map-sm.jpg 2000w
-							"
-							alt="Tove Valley Coverage Map"
-						/>
-					</div>
-					<div class="container-sm">
-						<p class="pt-4">
-							Our area of coverage extends to the following villages in South
-							Northamptonshire:
+			<!-- System Status -->
+			<section class="row container-fluid py-3 text-center">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<div class="card">
+						<p>CURRENT SYSTEM STATUS</p>
+						<p class="mx-auto status-green">
+							2026-07-30 10:45: There are no known service problems in the Tove
+							Valley network.
 						</p>
-						<div class="text-center">
-							<div class="row row-cols-auto px-5">
-								<div class="col border">Abthorpe</div>
-								<div class="col border">Bradden</div>
-								<div class="col border">Falcutt</div>
-								<div class="col border">Blakelsey</div>
-								<div class="col border">Helmdon</div>
-								<div class="col border">Lois Weedon</div>
-								<div class="col border">Plumpton</div>
-								<div class="col border">Slapton</div>
-								<div class="col border">Wappenham</div>
-								<div class="col border">Weston</div>
-								<div class="col border">Woodend</div>
+						<p>
+							If you have experienced issues with your broadband, please let us
+							know:
+						</p>
+						<p>
+							<a href="#">
+								<button type="button" class="btn btn-danger">
+									Report a problem
+								</button>
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-1"></div>
+			</section>
+			<!-- Coverage -->
+			<section class="container-md back-gradient">
+				<h2 id="coverage" class="text-center pt-2">Our Coverage</h2>
+				<p class="py-1">
+					Tove Valley Superfast Broadband brings 10,000Mbps internet connection
+					to villages in our area with fibre optics and radio.
+				</p>
+				<div class="container-md">
+					<img
+						class="border border-3 border-dark card-img-top"
+						src="images/tvb-coverage-map-sm.jpg"
+						srcset="
+							images/tvb-coverage-map-sm.jpg  568w,
+							images/tvb-coverage-map-sm.jpg 1000w,
+							images/tvb-coverage-map-sm.jpg 2000w
+						"
+						alt="Tove Valley Coverage Map"
+					/>
+				</div>
+				<div class="container-sm">
+					<p class="pt-4">
+						Our area of coverage extends to the following villages in South
+						Northamptonshire:
+					</p>
+					<div class="text-center">
+						<div class="row row-cols-auto px-5">
+							<div class="col border">Abthorpe</div>
+							<div class="col border">Bradden</div>
+							<div class="col border">Falcutt</div>
+							<div class="col border">Blakelsey</div>
+							<div class="col border">Helmdon</div>
+							<div class="col border">Lois Weedon</div>
+							<div class="col border">Plumpton</div>
+							<div class="col border">Slapton</div>
+							<div class="col border">Wappenham</div>
+							<div class="col border">Weston</div>
+							<div class="col border">Woodend</div>
+						</div>
+					</div>
+					<p class="pt-4">
+						The definitive test for service capability is to enter your postcode
+						here:
+					</p>
+					<form class="py-3 container-sm">
+						<div class="row g-3 align-items-center justify-content-center">
+							<div class="col-auto">
+								<label for="InputPostcode" class="form-label">Postcode</label>
+							</div>
+							<div class="col-auto">
+								<input
+									type="text"
+									class="form-control"
+									id="InputPostcode"
+									placeholder="NN12 xxx"
+									required
+								/>
+							</div>
+							<div class="col-auto">
+								<button
+									type="submit"
+									class="btn btn-secondary"
+									alt="Check coverage"
+								>
+									Check Coverage
+								</button>
 							</div>
 						</div>
-						<p class="pt-4">
-							The definitive test for service capability is to enter your
-							postcode here:
-						</p>
-						<form class="py-3 container-sm">
-							<div class="row g-3 align-items-center justify-content-center">
-								<div class="col-auto">
-									<label for="InputPostcode" class="form-label">Postcode</label>
-								</div>
-								<div class="col-auto">
-									<input
-										type="text"
-										class="form-control"
-										id="InputPostcode"
-										placeholder="NN12 xxx"
-										required
-									/>
-								</div>
-								<div class="col-auto">
-									<button
-										type="submit"
-										class="btn btn-secondary"
-										alt="Check coverage"
-									>
-										Check Coverage
-									</button>
-								</div>
-							</div>
-						</form>
-					</div>
+					</form>
 				</div>
 			</section>
 			<!-- Costs -->
@@ -262,7 +234,7 @@
 				</div>
 			</section>
 			<!-- What we do -->
-			<section id="what-we-do" class="pb-2 bg-secondary-subtle">
+			<section id="what-we-do" class="pb-2 back-gradient">
 				<div class="container">
 					<h2 class="text-center pt-4">What we do</h2>
 					<p>
@@ -299,14 +271,9 @@
 				</a>
 			</section>
 		</main>
-		<footer class="container-fluid bg-secondary bg-gradient bg-opacity-75">
+		<footer class="container-fluid back-gradient">
 			<div class="text-center py-3">
-				<a href="index.html">
-					<img
-						src="images/logo-tove-valley.png"
-						class="img-logo-sm rounded-circle"
-						alt="Tove Valley Broadband Logo"
-				/></a>
+				<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
 			</div>
 			<div class="row row-cols-3 text-center pb-3">
 				<div class="col">
@@ -325,21 +292,13 @@
 					>
 				</div>
 				<div class="col">
-					<a
-						href="#"
-						class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-						>FAQs</a
-					>
+					<a href="#" class="nav-link">FAQs</a>
 				</div>
 				<div class="col">
-					<a
-						href="#"
-						class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-						>Useful Info</a
-					>
+					<a href="#" class="nav-link">Useful Info</a>
 				</div>
 			</div>
-			<p class="fontsize-xs text-center pb-1">
+			<p class="fontsize-sm text-center pb-1">
 				Website hosted by:
 				<a
 					href="www.tovevalley.com"
