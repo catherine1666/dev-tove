@@ -42,18 +42,21 @@ h3 {
 	color: hsl(var(--tvsb-clr-blue));
 }
 /* NAVBAR */
+.navbar-nav {
+	align-items: end;
+}
 .navbar-brand,
 .nav-link,
 .navbar-toggler {
 	color: hsl(var(--tvsb-clr-blue));
 }
 .navbar-brand {
-	font-size: 2em;
+	font-size: 1.5em;
 	padding-inline: 1.5em;
 }
 .nav-link {
 	color: hsl(var(--tvsb-clr-blue));
-	font-size: 1.5em;
+	font-size: 1.1em;
 }
 .nav-link:active {
 	color: hsl(var(--tvsb-clr-green));
@@ -67,7 +70,7 @@ h3 {
 }
 .btn-primary {
 	color: hsl(var(--tvsb-clr-light));
-	font-size: 1.2em;
+	font-size: 1.1em;
 	background-color: hsl(var(--tvsb-clr-blue));
 	border: 2px solid hsl(var(--tvsb-clr-blue));
 }
@@ -78,7 +81,7 @@ h3 {
 	border: 2px solid hsl(var(--tvsb-clr-blue));
 }
 .btn-danger {
-	font-size: 1.5em;
+	font-size: 1.1em;
 }
 .btn-ombudsman {
 	background-color: hsl(var(--ombudsman-purple-color));
@@ -102,3 +105,4 @@ h3 {
 .status-yellow {
 	background-color: hsl(var(--tvsb-clr-highlight-yellow));
 }
+/* ICONS */
