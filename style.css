@@ -62,12 +62,7 @@ h3 {
 	color: hsl(var(--tvsb-clr-green));
 }
 /* BUTTONS */
-.btn-outline-primary {
-	color: hsl(var(--tvsb-clr-blue));
-	font-size: 1.5em;
-	background-color: hsl(var(--tvsb-clr-light));
-	border: 2px solid hsl(var(--tvsb-clr-blue));
-}
+
 .btn-primary {
 	color: hsl(var(--tvsb-clr-light));
 	font-size: 1.1em;
@@ -79,6 +74,17 @@ h3 {
 	color: hsl(var(--tvsb-clr-blue));
 	background-color: hsl(var(--tvsb-clr-skyblue));
 	border: 2px solid hsl(var(--tvsb-clr-blue));
+}
+.btn-outline-primary {
+	color: hsl(var(--tvsb-clr-blue));
+	font-size: 1.1em;
+	background-color: hsl(var(--tvsb-clr-light));
+	border: 2px solid hsl(var(--tvsb-clr-blue));
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+	color: hsl(var(--tvsb-clr-blue));
+	background-color: hsl(var(--tvsb-clr-skyblue));
 }
 .btn-danger {
 	font-size: 1.1em;
