@@ -10,6 +10,7 @@
 	--tvsb-clr-green: 113 83% 21%;
 	--tvsb-clr-highlight-green: 115 98% 51%;
 	--tvsb-clr-highlight-yellow: 60 100% 50%;
+	--tvsb-clr-highlight-red: 0 100% 50%;
 	--ombudsman-purple-color: 300 89% 14%;
 	--ombudsman-purple-green: 157 60% 63%;
 }
@@ -31,6 +32,10 @@ main {
 }
 .fontsize-xs {
 	font-size: 0.45em;
+}
+/* Text Colours */
+.txt-red {
+	color: hsl(var(--tvsb-clr-highlight-red));
 }
 /* Headings */
 h1,
@@ -107,7 +112,7 @@ h3 {
 /* BACKGROUNDS */
 .back-gradient {
 	border-image: fill 1
-		linear-gradient(hsl(var(--tvsb-clr-light)), hsl(var(--tvsb-clr-blue) / 0.5));
+		linear-gradient(hsl(var(--tvsb-clr-light)), hsl(var(--tvsb-clr-blue) / 0.3));
 }
 .status-green {
 	background-color: hsl(var(--tvsb-clr-highlight-green));
