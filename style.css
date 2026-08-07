@@ -34,6 +34,9 @@ main {
 	font-size: 0.45em;
 }
 /* Text Colours */
+.txt-blue {
+	color: hsl(var(--tvsb-clr-blue));
+}
 .txt-red {
 	color: hsl(var(--tvsb-clr-highlight-red));
 }
@@ -70,6 +73,10 @@ h3 {
 .nav-link:active {
 	color: hsl(var(--tvsb-clr-green));
 }
+.nav-link:hover,
+.nav-link:focus {
+	text-decoration: underline;
+}
 /* BUTTONS */
 
 .btn-primary {
@@ -101,7 +108,7 @@ h3 {
 .btn-ombudsman {
 	background-color: hsl(var(--ombudsman-purple-color));
 	color: hsl(var(--ombudsman-purple-green));
-	font-size: 1.5em;
+	font-size: 1.1em;
 }
 .btn-ombudsman:hover {
 	background-color: hsl(var(--ombudsman-purple-color));
