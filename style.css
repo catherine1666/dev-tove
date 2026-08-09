@@ -1,5 +1,5 @@
 :root {
-	--scroll-padding: 76px;
+	--scroll-padding: 60px;
 	/* COLOURS */
 	/* 	--tvsb-btn-primary: 113 83% 21%; */
 	--tvsb-clr-secondary: 204 21% 23%;
@@ -59,8 +59,9 @@ h3 {
 	color: hsl(var(--tvsb-clr-blue));
 }
 .navbar-brand {
-	font-size: 1.4em;
-	padding-inline: 1.5em;
+	font-size: 1.5em;
+	padding-inline: 0.5em;
+	margin-inline: 0.1em;
 }
 .br.a {
 	line-height: 0.5px;
