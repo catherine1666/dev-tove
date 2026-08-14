@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>TVSB Login</title>
+		<title>TVSB Registration Form</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -21,7 +21,10 @@
 			<!-- Navbar -->
 			<nav class="navbar navbar-expand-lg bg-body-tertiary">
 				<div class="container">
-					<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
+					<a class="navbar-brand" href="index.html"
+						>Tove Valley<br class="d-md-none" />
+						Broadband</a
+					>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -42,7 +45,7 @@
 							<a class="nav-link" href="registration-process.html"
 								><i class="bi bi-pencil-square pe-1"></i>Register</a
 							>
-							<a class="nav-link active" aria-current="page" href="login.html"
+							<a class="nav-link" href="login.html"
 								><i class="bi bi-person-circle pe-1"></i>Log In</a
 							>
 							<a class="nav-link" href="#"
@@ -59,66 +62,111 @@
 			</nav>
 		</header>
 		<main class="navbar-padding">
-			<!-- Page Intro -->
 			<p class="text-center text-bg-secondary text-warning my-0">
 				Draft Website ---- Draft Website ----Draft Website
 			</p>
+			<!-- Page Intro -->
 			<section class="container-fluid text-center pb-5 back-gradient">
-				<h1>Log In</h1>
+				<div class="container-sm">
+					<h1>REGISTRATION FORM</h1>
+					<p>
+						To continue to register with Tove Valley Broadband, please fill in
+						the form below with your details and we will contact you to arrange
+						a survey of your premises, discuss your options and schedule your
+						installation.
+					</p>
+				</div>
 			</section>
 			<p class="text-center text-bg-secondary text-warning my-0">
 				Draft Website ---- Draft Website ----Draft Website
 			</p>
-			<!-- Log In Form -->
-			<div class="border-top py-5">
-				<section class="container-md text-light">
-					<form class="border border-3 border-warning">
-						<div class="row p-3">
-							<div class="col-md-6 pb-1">
-								<label for="email" class="form-label text-dark">Email:</label>
-								<input
-									type="text"
-									id="email"
-									class="form-control"
-									placeholder="Enter email"
-									name="email"
-									required
-								/>
-							</div>
-							<div class="col-md-6 pb-1">
-								<label for="pwd" class="form-label text-dark">Password:</label>
-								<input
-									type="password"
-									class="form-control"
-									placeholder="Enter password"
-									name="pswd"
-									required
-								/>
-							</div>
-						</div>
-						<div class="p-3">
-							<button type="submit" class="btn btn-primary">Submit</button>
-						</div>
-						<div class="p-3">
-							<button type="btn" class="btn btn-outline-primary">
-								Forgotten Password
-							</button>
-						</div>
-					</form>
-				</section>
-			</div>
-		</main>
-		<footer class="container-fluid back-gradient sticky-bottom">
+			<!-- Registration Form -->
+			<section class="container-md pt-5">
+				<form class="row g-3 border border-3 border-warning p-3">
+					<div class="col-md-6">
+						<label for="firstname" class="form-label">First Name</label>
+						<input
+							type="text"
+							class="form-control"
+							id="firstname"
+							placeholder="Enter First Name"
+						/>
+					</div>
+					<div class="col-md-6">
+						<label for="lastname" class="form-label">Last Name</label>
+						<input
+							type="text"
+							class="form-control"
+							id="lastname"
+							placeholder="Enter Last Name"
+						/>
+					</div>
+					<div class="col-md-6">
+						<label for="email" class="form-label">Email</label>
+						<input
+							type="email"
+							class="form-control"
+							id="email"
+							placeholder="Email address"
+						/>
+					</div>
+					<div class="col-md-6"></div>
+					<div class="col-12">
+						<label for="inputAddress1" class="form-label">Address</label>
+						<input
+							type="text"
+							class="form-control"
+							id="inputAddress1"
+							placeholder="12 Main Street"
+						/>
+					</div>
+					<div class="col-md-4">
+						<label for="inputVillage" class="form-label">Village</label>
+						<select id="inputVillage" class="form-select">
+							<option selected>Choose...</option>
+							<option>Abthorpe</option>
+							<option>Bradden</option>
+							<option>Blakelsey</option>
+							<option>Falcutt</option>
+							<option>Helmdon</option>
+							<option>Lois Weedon</option>
+							<option>Plumpton</option>
+							<option>Slapton</option>
+							<option>Wappenham</option>
+							<option>Weston</option>
+							<option>Woodend</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<label for="inputPostcode" class="form-label">Postcode</label>
+						<input
+							type="text"
+							class="form-control"
+							id="inputPostcode"
+							placeholder="NN12..."
+						/>
+					</div>
+					<div class="col-12">
+						<!-- <button type="submit" class="btn btn-primary"> -->
+						<button type="" href="#" class="btn btn-primary">
+							Submit Registration Request
+						</button>
+					</div>
+				</form>
+			</section>
 			<!-- Top of page -->
-			<section class="text-end pb-1">
+			<section class="text-end pb-5 fixed-bottom">
 				<a href="#top" class="nav-link pe-3 fs-1">
 					<i class="bi bi-arrow-up-circle-fill"></i>
 				</a>
 			</section>
+		</main>
+		<footer class="container-fluid back-gradient">
 			<div class="text-center py-3">
 				<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
 			</div>
 			<div class="row row-cols-3 text-center pb-3">
+				<div class="col"></div>
 				<div class="col">
 					<a
 						href="https://www.ombudsman-services.org/"
@@ -135,9 +183,8 @@
 					>
 				</div>
 				<div class="col">
+					<a href="support.html" class="nav-link">SUPPORT</a>
 					<a href="#" class="nav-link">FAQs</a>
-				</div>
-				<div class="col">
 					<a href="#" class="nav-link">Useful Info</a>
 				</div>
 			</div>
@@ -156,6 +203,7 @@
 				>
 			</p>
 		</footer>
+		<!-- Javascript items -->
 		<script
 			defer
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
