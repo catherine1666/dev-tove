@@ -24,7 +24,12 @@ main {
 .navbar-padding {
 	padding-top: var(--scroll-padding);
 }
-
+span.anchor {
+	display: block;
+	position: relative;
+	top: -100px;
+	visibility: hidden;
+}
 /* TYPOGRAPHY */
 /* Font sizes */
 .fontsize-sm {
