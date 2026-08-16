@@ -32,6 +32,12 @@ span.anchor {
 }
 /* TYPOGRAPHY */
 /* Font sizes */
+p,
+li,
+div,
+.btn {
+	font-size: 1.3rem;
+}
 .fontsize-sm {
 	font-size: 0.75em;
 }
@@ -84,10 +90,9 @@ h3 {
 	text-decoration: underline;
 }
 /* BUTTONS */
-
 .btn-primary {
 	color: hsl(var(--tvsb-clr-light));
-	font-size: 1.1em;
+
 	background-color: hsl(var(--tvsb-clr-blue));
 	border: 2px solid hsl(var(--tvsb-clr-blue));
 }
