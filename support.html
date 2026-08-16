@@ -85,6 +85,16 @@
 					role="group"
 					aria-label="Section Options"
 				>
+					<a href="#transfer-email">
+						<button type="button" class="btn btn-primary mx-2">
+							<div class="d-flex align-items-center">
+								<span class="px-2"
+									><i class="bi bi-envelope-at-fill pe-1"></i>Transfer
+									Email</span
+								>
+							</div>
+						</button>
+					</a>
 					<a href="#faqs">
 						<button type="button" class="btn btn-primary mx-2">
 							<div class="d-flex align-items-center">
@@ -131,10 +141,44 @@
 			</section>
 			<!-- Help -->
 			<section class="container-fluid py-3 back-gradient">
-				<span id="faqs" class="anchor"></span>
+				<!-- Change Emails -->
+				<article
+					class="container-sm text-center bg-white border border-3 border-warning p-4"
+				>
+					<span id="transfer-email" class="anchor"></span>
+					<h2 class="">Change Private Emails</h2>
+					<p>
+						ABbA/Tove Valley Broadband now advises that private email services
+						hosted on the TVB server are moved to Google mail.
+					</p>
+					<p>
+						Whereas TVB allows up to 1 Gbyte of data, Google allows up to 15
+						Gbytes and you can pay them for more if required.
+					</p>
+					<p>
+						For instructions to transfer your TVB email service to Google mail,
+						please click the button below.
+					</p>
+
+					<a
+						href="docs/tvb-transferring-a-tvb-mailbox-to-google-mail.pdf"
+						target="_blank"
+					>
+						<button type="button" class="btn btn-primary mx-2">
+							<div class="d-flex align-items-center">
+								<span class="px-2"
+									><i class="bi bi-envelope-at-fill pe-1"></i>How to transfer
+									Email</span
+								>
+							</div>
+						</button>
+					</a>
+				</article>
+				<br /><br />
 				<article
 					class="container-sm bg-white border border-3 border-warning p-4 jump"
 				>
+					<span id="faqs" class="anchor"></span>
 					<h2 class="text-center">FAQs</h2>
 					<p>
 						Hopefully, your query will be covered in one of the sections below.
@@ -492,7 +536,7 @@
 					<h2 class="">Useful Information</h2>
 					<p>Here are some popular downloads that you might find useful.</p>
 					<p>
-						<a href="#">
+						<a href="docs/tvb-wifi-home-network-issues.pdf" target="_blank">
 							<button type="button" class="btn btn-primary mx-2">
 								<div class="d-flex align-items-center">
 									<span class="px-2"
@@ -504,7 +548,7 @@
 						</a>
 					</p>
 					<p>
-						<a href="#">
+						<a href="docs/tvb-broadband-backup-solutions.pdf" target="_blank">
 							<button type="button" class="btn btn-primary mx-2">
 								<div class="d-flex align-items-center">
 									<span class="px-2"
@@ -516,7 +560,10 @@
 						</a>
 					</p>
 					<p>
-						<a href="#">
+						<a
+							href="docs/tvb-choosing-an-alternative-telephone-provider.pdf"
+							target="_blank"
+						>
 							<button type="button" class="btn btn-primary mx-2">
 								<div class="d-flex align-items-center">
 									<span class="px-2"
@@ -527,7 +574,9 @@
 							</button>
 						</a>
 					</p>
-					<p>
+					<p class="txt-red">
+						Q - SHOULD THIS BE HERE FOR NON-MEMBERS TO ACCESS?
+						<br />
 						<a href="#">
 							<button type="button" class="btn btn-primary mx-2">
 								<div class="d-flex align-items-center">
@@ -585,8 +634,11 @@
 				</div>
 				<div class="col">
 					<a href="#" class="nav-link">SUPPORT</a>
-					<a href="#" class="nav-link">FAQs</a>
-					<a href="#" class="nav-link">Useful Info</a>
+					<a href="support.html#faqs" class="nav-link">FAQs</a>
+					<a href="support.html#transfer-email" class="nav-link"
+						>Transfer Email</a
+					>
+					<a href="support.html#useful-info" class="nav-link">Useful Info</a>
 				</div>
 			</div>
 			<p class="fontsize-sm text-center pb-1">
