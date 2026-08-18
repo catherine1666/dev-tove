@@ -1,5 +1,5 @@
 :root {
-	--scroll-padding: 6.7rem;
+	--scroll-padding: 7rem;
 	/* COLOURS */
 	/* 	--tvsb-btn-primary: 113 83% 21%; */
 	--tvsb-clr-secondary: 204 21% 23%;
@@ -79,6 +79,16 @@ h3 {
 	line-height: 0.5px;
 	font-size: 0.1px;
 }
+/* #customNav {
+	/* --bs-navbar-color: #e2e8f0; */
+	--bs-navbar-hover-color: #ffffff;
+	--bs-navbar-active-color: #63b3ed;
+	--bs-navbar-brand-color: #ffffff;
+	--bs-navbar-brand-hover-color: #63b3ed;
+	--bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.2);
+	background-color: #1e3a5f;
+	padding: 1rem 0;
+} */
 .nav-link {
 	color: hsl(var(--tvsb-clr-blue));
 	font-size: 1.1em;
@@ -86,6 +96,7 @@ h3 {
 .nav-link:active {
 	color: hsl(var(--tvsb-clr-green));
 }
+
 .nav-link:hover,
 .nav-link:focus {
 	text-decoration: underline;
