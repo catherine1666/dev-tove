@@ -17,13 +17,15 @@
 		<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
 	<body>
-		<header class="fixed-top border-bottom border-3">
+				<header class="fixed-top border-bottom border-3">
 			<!-- Navbar -->
+			<div class="text-center back-gradient-nav">
+				<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
+			</div>
 			<nav class="navbar navbar-expand-lg bg-body-tertiary">
 				<div class="container">
-					<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
 					<button
-						class="navbar-toggler"
+						class="navbar-toggler me-auto"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarNav"
@@ -34,14 +36,15 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div
-						class="collapse navbar-collapse justify-content-end"
+						class="collapse navbar-collapse justify-content-center"
 						id="navbarNav"
 					>
-						<div class="navbar-nav justify-content-end">
-							<a class="nav-link active" aria-current="page" href="index.html"
+						<div class="navbar-nav justify-content-start">
+							<a class="nav-link"  href="index.html"
 								>Home</a
 							>
-							<a class="nav-link" href="register.html"
+							<a class="nav-link" href="services.html">Services</a>
+							<a class="nav-link" href="registration-process.html"
 								><i class="bi bi-pencil-square pe-1"></i>Register</a
 							>
 							<a class="nav-link" href="login.html"
@@ -109,12 +112,21 @@
 				Draft Website ---- Draft Website ----Draft Website
 			</p>
 			<!-- System Status -->
-			<section class="container-fluid py-3">
-				<div class="container-sm bg-white border border-3 p-4 text-center">
-					<h2>CURRENT SYSTEM STATUS</h2>
-					<p class="mx-auto status-green">
-						2026-07-30 10:45: There are no known service problems in the Tove
-						Valley network.
+				<section class="py-3">
+				<div
+					class="container-sm bg-white border border-3 border-warning text-center"
+				>
+					<h2><span class="p-2">CURRENT SYSTEM STATUS</span></h2>
+					<p class="mx-auto">
+						<p class="status-green py-lg-2 py-1 px-5"
+							>2026-07-30 10:45: There are no known service problems in the Tove
+							Valley network.</p
+						>
+					</p>
+										<p class="text-center pt-3">
+						<span class="text-bg-success fs-4"
+							>^^^Functionality still to be programmed here^^^
+						</span>
 					</p>
 					<p>
 						If you are experiencing issues with your broadband, please let us
@@ -127,11 +139,7 @@
 							</button>
 						</a>
 					</p>
-					<p class="text-center pt-3">
-						<span class="text-bg-success fs-4"
-							>Functionality still to be programmed here.
-						</span>
-					</p>
+
 				</div>
 			</section>
 			<!-- Help -->
@@ -169,10 +177,10 @@
 							>
 								<div class="accordion-body">
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											What is broadband and superfast broadband?
 										</summary>
-										<p>
+										<p class="bg-light">
 											Broadband is a term used to describe an "always on"
 											connection to the internet. The minimum speed for
 											Broadband is generally considered to be a download speed
@@ -200,7 +208,7 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											I have an existing service with (BT, AOL, Orange,
 											TalkTalk, etc.) What do I do?
 										</summary>
@@ -217,7 +225,7 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											What restrictions will there be on my usage of the
 											internet?
 										</summary>
@@ -239,7 +247,7 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											What exactly is the speed of the fibre-optic connection?
 										</summary>
 										<p>
@@ -252,7 +260,7 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											Why are upload and download speeds different?
 										</summary>
 										<p>
@@ -265,7 +273,7 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											There are lots of concerns about mobile phone masts. Isn’t
 											the wireless network the same?
 										</summary>
@@ -290,7 +298,7 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											If the network is wireless, won’t anyone just be able to
 											access the connection?
 										</summary>
@@ -300,13 +308,13 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											Does the system run encryption on the wireless network?
 										</summary>
 										<p>Yes.</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											If my computer is always connected to the internet, won’t
 											that allow people to hack in and cause trouble?
 										</summary>
@@ -322,7 +330,7 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											I sometimes use my computer to send and receive faxes -
 											how will this be affected?
 										</summary>
@@ -335,7 +343,7 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											What happens if everyone wants to use the connection at
 											the same time?
 										</summary>
@@ -343,19 +351,19 @@
 											The connection to the internet is shared between all
 											users. In practice we expect our bandwidth to be
 											sufficient to cater for everyone's use. Our main internet
-											connection's bandwidth is 10,000Mbps symetrical (i.e.
+											connection's bandwidth is 10Gbps symetrical (i.e.
 											download and upload) and is used only to 20% of capacity
 											even at peak times.
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											Does the system run encryption on the wireless network?
 										</summary>
 										<p>Yes.</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											Can I get fibre to my premises?
 										</summary>
 										<p>
@@ -410,7 +418,7 @@
 										account, go to 'My eMails' and visit 'eMail instructions'
 									</p>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											Will I still be able to use my existing e-mail address?
 										</summary>
 										<p>
@@ -430,7 +438,7 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											But my e-mail address is part of my existing deal with my
 											dial-up ISP.
 										</summary>
@@ -444,7 +452,7 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											Will there be a new e-mail addresses available to use?
 										</summary>
 										<p>
@@ -453,7 +461,7 @@
 										</p>
 									</details>
 									<details>
-										<summary class="txt-blue">
+										<summary class="txt-blue fw-bold">
 											Is Webmail available with TVB email addresses?
 										</summary>
 										<p>
@@ -479,46 +487,31 @@
 					<p>Here are some popular downloads that you might find useful.</p>
 					<p>
 						<a href="docs/tvb-wifi-home-network-issues.pdf" target="_blank">
-							<button type="button" class="btn btn-primary mx-2">
-								<div class="d-flex align-items-center">
-									<span class="px-2"
-										><i class="bi bi-wifi pe-2"></i>Wifi Issues in the
-										house</span
-									>
-								</div>
+							<button type="button" class="primary-link mx-2">
+								<div class="d-flex align-items-center"><i class="bi bi-wifi pe-2"></i>Wifi Issues in the
+										house</div>
 							</button>
 						</a>
 					</p>
 					<p>
 						<a href="docs/tvb-broadband-backup-solutions.pdf" target="_blank">
-							<button type="button" class="btn btn-primary mx-2">
-								<div class="d-flex align-items-center">
-									<span class="px-2"
-										><i class="bi bi-hdd-network-fill pe-2"></i>Alternative
-										Broadband options</span
-									>
-								</div>
+							<button type="button" class="primary-link mx-2">
+								<div class="d-flex align-items-center"><i class="bi bi-hdd-network-fill pe-2"></i>Alternative
+										Broadband options</div>
 							</button>
 						</a>
 					</p>
 					<p>
-						<a
-							href="docs/tvb-choosing-an-alternative-telephone-provider.pdf"
-							target="_blank"
-						>
-							<button type="button" class="btn btn-primary mx-2">
-								<div class="d-flex align-items-center">
-									<span class="px-2"
-										><i class="bi bi-telephone-fill pe-2"></i>Alternative
-										telephone services (VOIP)</span
-									>
-								</div>
+						<a href="docs/tvb-choosing-an-alternative-telephone-provider.pdf" target="_blank">
+							<button type="button" class="primary-link mx-2">
+								<div class="d-flex align-items-center"><i class="bi bi-telephone-fill pe-2"></i>Alternative
+										telephone services (VOIP)</div>
 							</button>
 						</a>
 					</p>
 					<p>More detailed information can be found in our document library.</p>
 					<p>
-						<a href="library.html" target="_blank">
+						<a href="library.html">
 							<button type="button" class="btn btn-primary mx-2">
 								<div class="d-flex align-items-center">
 									<span class="px-2"
@@ -532,7 +525,7 @@
 						If you have not found the answer to your query, please use the
 						Ticket Request Form.
 					</p>
-					<a href="report-a-problem.html">
+					<a href="report-a-problem.html#contact-form">
 						<button type="button" class="btn btn-primary mx-2">
 							<span class="px-2"
 								><i class="bi bi-person-circle pe-1"></i>Ticket Request
@@ -550,7 +543,7 @@
 				</a>
 			</section>
 		</main>
-		<footer class="container-fluid back-gradient">
+			<footer class="container-fluid back-gradient-nav">
 			<div class="text-center py-3">
 				<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
 			</div>
@@ -576,8 +569,9 @@
 					>
 				</div>
 				<div class="col">
-					<a href="library.html" class="nav-link">Document Library</a>
-					<a href="library.html#company" class="nav-link">Company Info</a>
+					<a href="aboutus.html" class="nav-link">About Us</a>
+					<a href="library.html" class="nav-link">Library</a>
+					<a href="library.html#company" class="nav-link">Company</a>
 				</div>
 			</div>
 			<p class="fontsize-sm text-center pb-1">

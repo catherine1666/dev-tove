@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Login</title>
+		<title>Services</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -41,11 +41,16 @@
 					>
 						<div class="navbar-nav justify-content-start">
 							<a class="nav-link" href="index.html">Home</a>
-							<a class="nav-link" href="services.html">Services</a>
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="services.html"
+								>Services</a
+							>
 							<a class="nav-link" href="registration-process.html"
 								><i class="bi bi-pencil-square pe-1"></i>Register</a
 							>
-							<a class="nav-link active" aria-current="page" href="login.html"
+							<a class="nav-link" href="login.html"
 								><i class="bi bi-person-circle pe-1"></i>Log In</a
 							>
 							<a class="nav-link" href="#"
@@ -62,60 +67,85 @@
 			</nav>
 		</header>
 		<main class="navbar-padding">
-			<!-- Page Intro -->
 			<p class="text-center text-bg-secondary text-warning my-0">
-				Draft Website ---- Draft Website ----Draft Website
+				Draft Website ---- Draft Website ----
 			</p>
-			<section class="container-fluid text-center pb-5 back-gradient">
-				<h1>Tove Valley Broadband</h1>
-				<h1>Log In</h1>
+			<!-- Page Intro -->
+			<section class="container-fluid text-center back-gradient">
+				<div class="container-sm">
+					<h1>SERVICES</h1>
+					<p>
+						Tove Valley Superfast Broadband brings 10Gbps internet connection to
+						villages in our area with fibre optics and radio.
+					</p>
+				</div>
 			</section>
 			<p class="text-center text-bg-secondary text-warning my-0">
 				Draft Website ---- Draft Website ----Draft Website
 			</p>
-			<!-- Log In Form -->
-			<div class="border-top py-5">
-				<section class="container-md text-light">
-					<form class="border border-3 border-warning">
-						<div class="row p-3">
-							<div class="col-md-6 pb-1">
-								<label for="email" class="form-label text-dark">Email:</label>
-								<input
-									type="text"
-									id="email"
-									class="form-control"
-									placeholder="Enter email"
-									name="email"
-									required
-								/>
-							</div>
-							<div class="col-md-6 pb-1">
-								<label for="pwd" class="form-label text-dark">Password:</label>
-								<input
-									type="password"
-									class="form-control"
-									placeholder="Enter password"
-									name="pswd"
-									required
-								/>
-							</div>
-						</div>
-						<div class="p-3">
-							<button type="submit" class="btn btn-primary">Submit</button>
-						</div>
-						<div class="p-3">
-							<button type="btn" class="btn btn-outline-primary">
-								Forgotten Password
-							</button>
-						</div>
-					</form>
-					<p class="text-center pt-3">
-						<span class="text-bg-success fs-4"
-							>Functionality still to be programmed here.
-						</span>
+			<!-- WHAT WE DO SECTION -->
+			<section>
+				<div class="container-md">
+					<h2 class="text-center pt-4">
+						<span class="bg-warning p-2">What we do</span>
+					</h2>
+					<h3>Equipment</h3>
+					<p>
+						We provide the service at an ethernet socket in your premises but do
+						not provide WiFi routers or other internal devices simply because no
+						one solution fits all circumstances. We will give suggestions for
+						suitable equipment depending upon your property and requirements.
 					</p>
-				</section>
-			</div>
+					<p>
+						Tove Valley Broadband supplies the broadband service connected via
+						Customer Premise Equipment (CPE)(radio) or Optical Network Unit
+						(ONU)(fibre) - which is powered through a power injector - a small
+						(3" x 1.5" x 1") black or white device connected to your electricity
+						mains - and finally an ethernet cable which you can plug into a
+						router, your computer or a switch. Some ONUs are powered directly
+						from the mains. TVB responsibility ends at the ethernet cable. If
+						you were supplied new kit for your home or had existing equipment
+						re-programmed, this would have been undertaken as a community
+						service and carries no guarantees or commitments other than the
+						replacement of faulty equpiment supplied by us.
+					</p>
+					<h3>Businesses</h3>
+					<p>
+						We can work with you if you are a business with more than 5 people
+						associated in any way with the internet use. However, we must
+						discuss discuss your requirements with you so please contact us if
+						this is your situation.
+					</p>
+					<h3>Fixed Public IP Addresses</h3>
+					<p>
+						If you are looking for information about fixed (public) IP addresses
+						and other services we can offer, please refer to the document below:
+					</p>
+					<p class="text-center">
+						<a href="docs/Fixed_Public_IP_addresses_1.1.pdf" target="_blank">
+							<button type="button" class="primary-link mx-2">
+								<div class="d-flex align-items-center">
+									Fixed Public IP Addresses
+								</div>
+							</button>
+						</a>
+					</p>
+					<h3>In Your House</h3>
+					<p>
+						If you have a problem with the set-up in your premises - equipment
+						or programs - it is worth dropping us a line and explaining the
+						issue. We may be able to suggest a course of action - but remeber
+						this is an entirely voluntary service - there is no obligation for
+						us to become involved.
+					</p>
+				</div>
+			</section>
+			<!-- Top of page -->
+			<section class="text-end pb-5 sticky-bottom">
+				<a href="#top" class="nav-link pe-3 fs-1">
+					<i class="bi bi-arrow-up-circle-fill"></i>
+				</a>
+			</section>
 		</main>
 		<footer class="container-fluid back-gradient-nav">
 			<div class="text-center py-3">

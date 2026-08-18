@@ -19,11 +19,13 @@
 	<body>
 		<header class="fixed-top border-bottom border-3">
 			<!-- Navbar -->
+			<div class="text-center back-gradient-nav">
+				<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
+			</div>
 			<nav class="navbar navbar-expand-lg bg-body-tertiary">
 				<div class="container">
-					<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
 					<button
-						class="navbar-toggler"
+						class="navbar-toggler me-auto"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarNav"
@@ -34,11 +36,12 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div
-						class="collapse navbar-collapse justify-content-end"
+						class="collapse navbar-collapse justify-content-center"
 						id="navbarNav"
 					>
-						<div class="navbar-nav justify-content-end">
+						<div class="navbar-nav justify-content-start">
 							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link" href="services.html">Services</a>
 							<a class="nav-link" href="registration-process.html"
 								><i class="bi bi-pencil-square pe-1"></i>Register</a
 							>
@@ -48,7 +51,7 @@
 							<a class="nav-link" href="#"
 								><i class="bi bi-envelope-at-fill pe-1"></i>Webmail
 							</a>
-							<a href="report-a-problem.html" class="active">
+							<a href="report-a-problem.html">
 								<button type="button" class="btn btn-danger">
 									Report a problem
 								</button>
@@ -65,14 +68,9 @@
 			<!-- Page Intro -->
 			<section class="container-fluid text-center py-3 back-gradient">
 				<h1>REPORT A PROBLEM</h1>
-				<p class="text-center pt-3">
-					<span class="text-bg-success fs-4"
-						>Holding phrase here something like:
-					</span>
-				</p>
 				<p>
-					Please go through the following steps before resorting to calling the
-					telephone helpline.
+					We use a SUPPORT TICKET system to manage ALL communication with Tove
+					Valley Broadband.
 				</p>
 			</section>
 			<p class="text-center text-bg-secondary text-warning my-0">
@@ -83,6 +81,18 @@
 				<h2 class="text-center">
 					<span class="bg-warning p-2">Troubleshooting</span>
 				</h2>
+				<p>
+					We promise that action will be taken as soon as possible but please
+					remember you are dealing with a voluntary organisation.
+				</p>
+				<p>
+					We promise that action will be taken as soon as possible but please
+					remember you are dealing with a voluntary organisation.
+				</p>
+				<p>
+					Before filling in the Support Ticket form below, see if your
+					query/issue can be answered in any of the FAQs or information below.
+				</p>
 				<div class="row g-3 p-3">
 					<div class="col-12 col-sm-4 py-3 text-center text-md-end my-auto">
 						<a href="support.html#FAQs">
@@ -132,59 +142,28 @@
 				<span id="contact-form" class="anchor"></span>
 				<div class="container-md pt-5">
 					<form class="row g-3 bg-white border border-3 border-warning p-3">
-						<h2 class="text-center">Support Ticket Request</h2>
-						<ul>
-							<li class="py-2">
-								We use a support ticket system to manage ALL communication with
-								Tove Valley Broadband.
-							</li>
-							<li class="py-2">
-								Only by using this route can you be sure that your message will
-								get seen by an appropriate person.
-							</li>
-							<li class="py-2 pb-4">
-								There are 2 methods of contacting us with your query:
-								<ol>
-									<p class="text-center pt-3">
-										<span class="text-bg-success fs-4"
-											>The telephone number option can be removed or the order
-											of these two changed.
-										</span>
-									</p>
-									<p class="txt-red">
-										CHANGE THE ORDER OF THESE IF THEY PREFER FORM OVER PHONE
-										CALL
-									</p>
-									<li>
-										Complete the following form. Fields marked * are required.
-									</li>
-									<p class="list-unstyled txt-red fw-bold pt-2">OR</p>
-
-									<li>
-										Telephone the support number provided in your "welcome"
-										notes when you registered (you may even have a magnetic
-										sticker with the number on),
-									</li>
-								</ol>
-							</li>
-							<li class="py-2">
-								We promise that action will be taken as soon as possible but
-								please remember you are dealing with a non-profit organisation
-								and do not expect an instant response.
-
-								<span class="bg-warning"
-									>Our average response time is normally ……. Within the same
-									working day……
+						<div class="text-center">
+							<h2>Support Ticket Request</h2>
+							<p>Please fill in the form below.</p>
+							<p>We will endeavour to address your issue as soon as we can.</p>
+							<p>
+								<span class="bg-warning p-2">
+									Our average response time is normally ……. Within the same
+									working day……</span
+								>
+							</p>
+							<p class="text-center pt-3">
+								<span class="text-bg-success fs-4"
+									>^^^Response time included here^^^
 								</span>
-								We will endeavour to address your issue as soon as we can.
-							</li>
-						</ul>
+							</p>
+						</div>
 						<div id="ticket-request-form" class="p-3 bg-body-tertiary border">
 							<h2 class="text-center">Support Ticket Request Form</h2>
 							<p class="fst-italic text-center">
 								Members queries are prioritised
 							</p>
-							<label for="email-registered" class="form-label"
+							<label for="email-registered" class="form-label pt-4"
 								>Member's Registered Email address
 							</label>
 							<input
@@ -194,7 +173,7 @@
 								placeholder="Enter Member's Registered email address"
 								required
 							/>
-							<label for="email-alternative" class="form-label"
+							<label for="email-alternative" class="form-label pt-4"
 								>Alternative/Non-member Email address:
 							</label>
 							<input
@@ -203,7 +182,7 @@
 								id="email-alternative"
 								placeholder="Alternative/Non-member email address"
 							/>
-							<label for="name" class="form-label">Name: </label>
+							<label for="name" class="form-label pt-4">Name: </label>
 							<input
 								type="text"
 								class="form-control"
@@ -211,7 +190,7 @@
 								placeholder="Name"
 								required
 							/>
-							<label for="phone-number" class="form-label"
+							<label for="phone-number" class="form-label pt-4"
 								>Telephone number(s):
 							</label>
 							<input
@@ -221,7 +200,9 @@
 								placeholder="Phone number"
 								required
 							/>
-							<label for="address" class="form-label">Address (brief): </label>
+							<label for="address" class="form-label pt-4"
+								>Address (brief):
+							</label>
 							<input
 								type="text"
 								class="form-control"
@@ -229,7 +210,7 @@
 								placeholder="Address"
 								required
 							/>
-							<label for="query" class="form-label"
+							<label for="query" class="form-label pt-4"
 								>Please enter your query/issue here:
 							</label>
 							<div class="form-floating">
@@ -241,18 +222,19 @@
 								></textarea>
 								<label for="query">Issue/Query:</label>
 							</div>
-							<div class="col-12 pt-3">
+							<div class="col-12 py-5">
 								<!-- <button type="submit" class="btn btn-primary"> -->
 								<button type="" href="#" class="btn btn-primary">
 									Submit Ticket Request
 								</button>
 							</div>
+							<p class="text-center pt-3">
+								<span class="text-bg-success fs-4"
+									>Functionality to send form information still to be programmed
+									here.
+								</span>
+							</p>
 						</div>
-						<p class="text-center pt-3">
-							<span class="text-bg-success fs-4"
-								>Functionality still to be programmed here.
-							</span>
-						</p>
 					</form>
 				</div>
 			</section>
@@ -266,7 +248,7 @@
 				</a>
 			</section>
 		</main>
-		<footer class="container-fluid back-gradient">
+		<footer class="container-fluid back-gradient-nav">
 			<div class="text-center py-3">
 				<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
 			</div>
@@ -292,8 +274,9 @@
 					>
 				</div>
 				<div class="col">
-					<a href="library.html" class="nav-link">Document Library</a>
-					<a href="library.html#company" class="nav-link">Company Info</a>
+					<a href="aboutus.html" class="nav-link">About Us</a>
+					<a href="library.html" class="nav-link">Library</a>
+					<a href="library.html#company" class="nav-link">Company</a>
 				</div>
 			</div>
 			<p class="fontsize-sm text-center pb-1">

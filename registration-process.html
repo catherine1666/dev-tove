@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>TVSB Registration Process</title>
+		<title>Registration Process</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -19,11 +19,13 @@
 	<body>
 		<header class="fixed-top border-bottom border-3">
 			<!-- Navbar -->
+			<div class="text-center back-gradient-nav">
+				<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
+			</div>
 			<nav class="navbar navbar-expand-lg bg-body-tertiary">
 				<div class="container">
-					<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
 					<button
-						class="navbar-toggler"
+						class="navbar-toggler me-auto"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarNav"
@@ -34,11 +36,12 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div
-						class="collapse navbar-collapse justify-content-end"
+						class="collapse navbar-collapse justify-content-center"
 						id="navbarNav"
 					>
-						<div class="navbar-nav justify-content-end">
+						<div class="navbar-nav justify-content-start">
 							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link" href="services.html">Services</a>
 							<a
 								class="nav-link active"
 								aria-current="page"
@@ -92,7 +95,7 @@
 						Northamptonshire:
 					</p>
 					<div class="text-center">
-						<div class="row row-cols-auto px-5">
+						<div class="row row-cols-auto px-2">
 							<div class="col border fs-5">Abthorpe</div>
 							<div class="col border fs-5">Blakelsey</div>
 							<div class="col border fs-5">Bradden</div>
@@ -134,7 +137,7 @@
 								</button>
 							</div>
 						</div>
-							<p class="text-center pt-3">
+						<p class="text-center pt-3">
 							<span class="text-bg-success fs-4"
 								>Functionality still to be programmed here.
 							</span>
@@ -147,31 +150,36 @@
 				<h2 class="text-center">
 					<span class="bg-warning p-2">2 - ONE TOUCH SWITCHING (OTS)</span>
 				</h2>
-				<div class="container-sm text-center">
-					<span class="txt-red bg-dark fw-semibold fs-5 p-2"
-						>Please DO NOT USE One Touch Switching if you are looking to switch
-						providers to TVB.</span
+				<div class="container-sm">
+					<p
+						class="bg-light fw-semibold fs-5 p-2 border-danger border-3 border"
 					>
-					<p class="py-5">
+						Please DO NOT USE One Touch Switching if you are looking to switch
+						providers to TVB.
+					</p>
+					<p class="py-3">
 						Instead, please
 						<a
 							href="docs/tvb-why-not-to-use-one-touch-switching.pdf"
-							class="link-primary"
 							target="_blank"
 						>
-							<span class="px-1">Read this information....</span>
-							
+							<button type="button" class="primary-link mx-2">
+								<div class="d-flex align-items-center">
+									Read this information....
+								</div>
+							</button>
 						</a>
-						<p class="txt-red">
-								NB This is just a pdf document at the moment. I can make it a
-								webpage if preferred.
-							</p>
+					</p>
+
+					<p class="text-bg-success fs-4 text-center pt-3">
+						This is just a pdf document at the moment. I can make it a webpage
+						later if preferred.
 					</p>
 				</div>
 			</section>
 			<!-- BUSINESSES -->
-			<section class="py-3 text-center">
-				<h2 class="py-3">
+			<section class="py-3">
+				<h2 class="py-3 text-center">
 					<span class="bg-warning p-2">3 - BUSINESSES</span>
 				</h2>
 				<div class="container-sm">
@@ -190,8 +198,8 @@
 				</div>
 			</section>
 			<!-- FIXED (PUBLIC) IP ADDRESS -->
-			<section class="py-3 back-gradient text-center">
-				<h2 class="py-3">
+			<section class="py-3 back-gradient">
+				<h2 class="py-3 text-center">
 					<span class="bg-warning p-2">4 - FIXED (PUBLIC) IP ADDRESS</span>
 				</h2>
 				<div class="container-sm">
@@ -201,21 +209,22 @@
 						document:
 					</p>
 					<p class="text-center">
-						<a
-							href="docs/Fixed_Public_IP_addresses_1.1.pdf"
-							target="_blank"
-							class="link-primary"
-							>Fixed Public IP Addresses</a
-						>
+						<a href="docs/Fixed_Public_IP_addresses_1.1.pdf" target="_blank">
+							<button type="button" class="primary-link mx-2">
+								<div class="d-flex align-items-center">
+									Fixed Public IP Addresses
+								</div>
+							</button>
+						</a>
 					</p>
 				</div>
 			</section>
 			<!-- IN YOUR HOUSE -->
-			<section class="py-3 text-center">
-				<h2 class="py-3">
+			<section class="py-3">
+				<h2 class="py-3 text-center">
 					<span class="bg-warning p-2">5 - IN YOUR HOUSE</span>
 				</h2>
-				<div class="container-sm py-3 px-5">
+				<div class="container-sm py-3 px-2">
 					<p>
 						TVB is not responsible for how you distribute the broadband service
 						in your house and we do not provide WiFi routers as every house
@@ -225,23 +234,31 @@
 						online and in our library.
 					</p>
 					<p class="text-center">
-						<a href="#" class="link-primary">Link to library here</a>
+						<a href="library.html">
+							<button type="button" class="btn btn-primary me-1">
+								<div class="d-flex align-items-center">
+									<span class="fs-4">Document Library</span>
+								</div>
+							</button>
+						</a>
 					</p>
 				</div>
 			</section>
 			<!-- INSTALLATION PROCEDURE -->
-			<section class="py-5 back-gradient text-center">
-				<h2 class="py-2">
+			<section class="py-5 back-gradient">
+				<h2 class="py-2 text-center">
 					<span class="bg-warning p-2">6 - INSTALLATION PROCEDURE</span>
 				</h2>
 				<div class="container-sm">
 					<p>
 						When you have registered, we will contact you as soon as we can to
 						arrange a survey of your premises, discuss your options and schedule
-						your installation. When the installation has been completed and the
-						service is being delivered, you will have 30 days to pay the
-						membership fee of £100, the installation fees agreed and the yearly
-						service fee.
+						your installation.
+					</p>
+					<p>
+						When the installation has been completed and the service is being
+						delivered, you will have 30 days to pay the membership fee of £100,
+						the installation fees agreed and the yearly service fee.
 					</p>
 				</div>
 			</section>
@@ -255,7 +272,7 @@
 				<p class="text-center">
 					<a href="registration-terms.html">
 						<button type="button" class="btn btn-primary">
-							<i class="bi bi-pencil-square pe-1"></i>Register
+							<i class="bi bi-pencil-square pe-1"></i>Register Here
 						</button></a
 					>
 				</p>
@@ -267,7 +284,7 @@
 				</a>
 			</section>
 		</main>
-		<footer class="container-fluid back-gradient">
+		<footer class="container-fluid back-gradient-nav">
 			<div class="text-center py-3">
 				<a class="navbar-brand" href="index.html">Tove Valley Broadband</a>
 			</div>
@@ -293,8 +310,9 @@
 					>
 				</div>
 				<div class="col">
-					<a href="library.html" class="nav-link">Document Library</a>
-					<a href="library.html#company" class="nav-link">Company Info</a>
+					<a href="aboutus.html" class="nav-link">About Us</a>
+					<a href="library.html" class="nav-link">Library</a>
+					<a href="library.html#company" class="nav-link">Company</a>
 				</div>
 			</div>
 			<p class="fontsize-sm text-center pb-1">

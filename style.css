@@ -1,9 +1,10 @@
 :root {
-	--scroll-padding: 60px;
+	--scroll-padding: 6.7rem;
 	/* COLOURS */
 	/* 	--tvsb-btn-primary: 113 83% 21%; */
 	--tvsb-clr-secondary: 204 21% 23%;
 	--tvsb-clr-light: 214 37% 96%;
+	--tvsb-clr-lightgrey: 200 0% 83%;
 	--tvsb-clr-dark: 216 86% 6%;
 	--tvsb-clr-skyblue: 203 100% 90%;
 	--tvsb-clr-blue: 216 70% 29%;
@@ -92,7 +93,6 @@ h3 {
 /* BUTTONS */
 .btn-primary {
 	color: hsl(var(--tvsb-clr-light));
-
 	background-color: hsl(var(--tvsb-clr-blue));
 	border: 2px solid hsl(var(--tvsb-clr-blue));
 }
@@ -133,6 +133,10 @@ h3 {
 } */
 /* LINKS */
 /* BACKGROUNDS */
+.back-gradient-nav {
+	border-image: fill 1
+		linear-gradient(hsl(var(--tvsb-clr-light)), hsl(var(--tvsb-clr-lightgrey)));
+}
 .back-gradient {
 	border-image: fill 1
 		linear-gradient(hsl(var(--tvsb-clr-light)), hsl(var(--tvsb-clr-blue) / 0.3));
