@@ -1,5 +1,5 @@
 :root {
-	--scroll-padding: 105px;
+	--scroll-padding: 115px;
 	/* COLOURS */
 	/* 	--tvsb-btn-primary: 113 83% 21%; */
 	--tvsb-clr-secondary: 204 21% 23%;
@@ -69,6 +69,8 @@ h3 {
 .nav-link,
 .navbar-toggler {
 	color: hsl(var(--tvsb-clr-blue));
+	margin-right: 1.3rem;
+	font-size: 1.3em;
 }
 .navbar-brand {
 	font-size: 1.5em;
@@ -130,7 +132,7 @@ h3 {
 .btn-ombudsman {
 	background-color: hsl(var(--ombudsman-purple-color));
 	color: hsl(var(--ombudsman-purple-green));
-	font-size: 1.1em;
+	font-size: 1em;
 }
 .btn-ombudsman:hover {
 	background-color: hsl(var(--ombudsman-purple-color));
